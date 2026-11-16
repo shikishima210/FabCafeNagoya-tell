@@ -1,0 +1,38 @@
+name: 記録を更新
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 1時間ごと（UTC基準・毎時17分）
+  workflow_dispatch:        # Actions タブから手動でも実行できる
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-records
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Notion から記録を書き出す
+        run: node scripts/fetch-notion.mjs
+
+      - name: 変更があればコミット
+        run: |
+          if git diff --quiet -- data/records.json && git ls-files --error-unmatch data/records.json >/dev/null 2>&1; then
+            echo "変更なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/records.json
+          git commit -m "記録を更新 ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レーザー前例さがし</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 配色「シトラス」70:25:5 ／ ベース #FFF2E4・メイン #F26B00・アクセント #E1D100（文字色はベースの明度ランプ #271E14／#685D51） */
+  /* 加工機横のPC用。上=検索バー、中=おすすめ開始値とテスト値、下=前例の一覧表 */
+  --bg: #fff2e4;
+  --surface: #ffffff;
+  --surface-2: #fff9f2;
+  --ink: #271e14;
+  --muted: #685d51;
+  --line: #eedcd3;
+  --main: #f26b00;
+  --main-soft: #ffe3cc;
+  --accent: #f26b00;
+  --accent-soft: #ffe3cc;
+  --yellow: #e1d100;
+  --good: #2e7d32;
+  --ok: #2f5f9e;
+  --warn: #9a5b00;
+  --bad: #c62828;
+  --warn-bg: #fff8e6;
+  --bad-bg: #fdecea;
+  --font-body: "Zen Kaku Gothic New", "Yu Gothic", YuGothic, "Hiragino Sans", "Meiryo", sans-serif;
+  --font-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+:root { color-scheme: light only; }
+input, select, textarea { color: var(--ink); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+.num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+/* header */
+header.top { background: var(--main); color: var(--ink); border-bottom: 4px solid var(--yellow); }
+header.top .brand small, header.top .status { color: var(--ink); opacity: .8; }
+header.top .btn { background: rgba(255,255,255,.25); color: var(--ink); border-color: rgba(39,30,20,.35); }
+header.top .btn:hover { background: #ffffff; border-color: var(--ink); }
+.search { border-bottom: 1px solid var(--line); }
+header .wrap { max-width: 1080px; display: flex; align-items: center; gap: 16px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand .beam { width: 22px; height: 4px; background: var(--ink); border-radius: 2px; }
+.brand h1 { margin: 0; font-size: 20px; font-weight: 900; letter-spacing: .02em; }
+.brand small { color: var(--muted); font-size: 12px; }
+.status { margin-left: auto; display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); display: inline-block; margin-right: 6px; vertical-align: 1px; }
+.dot.live { background: #ffffff; box-shadow: 0 0 0 1.5px var(--ink); }
+.dot.err { background: var(--bad); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 5px 12px; cursor: pointer; font-size: 13px; }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--main); color: var(--ink); border-color: var(--main); font-weight: 700; font-size: 15px; padding: 8px 18px; }
+
+/* search bar */
+.search { background: var(--surface); border-bottom: 1px solid var(--line); }
+#listArea { scroll-margin-top: 0; }
+.search .wrap { position: relative; min-height: calc(100vh - 64px); box-sizing: border-box; padding-top: clamp(40px, 12vh, 140px); padding-bottom: clamp(88px, 12vh, 120px); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(36px, 8vh, 88px); max-width: 1080px; }
+.tolist { position: absolute; left: 50%; bottom: clamp(14px, 3vh, 28px); transform: translateX(-50%); white-space: nowrap; display: flex; flex-direction: column; align-items: center; gap: 2px; border: 0; background: none; cursor: pointer; color: var(--muted); font-size: 14px; font-weight: 700; padding: 8px 20px; border-radius: 10px; }
+.tolist:hover { color: var(--ink); background: var(--main-soft); }
+.tolist .arrow { font-size: 22px; line-height: 1; animation: bob 1.6s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(5px); } }
+#rec .box { padding: clamp(22px, 3.5vh, 36px) clamp(22px, 3vw, 36px); }
+#rec .box h2 { margin-bottom: clamp(16px, 2.6vh, 26px); font-size: 15px; color: var(--ink); }
+#rec .box h2 span:last-child { color: var(--muted); font-weight: 500; font-size: 13px; }
+#rec .tiles { gap: clamp(12px, 1.8vw, 24px); }
+#rec .tile { padding: clamp(14px, 2.4vh, 24px) clamp(16px, 1.8vw, 24px); gap: clamp(6px, 1.2vh, 14px); }
+#rec .tile strong { font-size: clamp(44px, 7vh, 72px); }
+#rec .basis { margin-top: clamp(14px, 2.4vh, 24px); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) 260px auto; gap: 24px; align-items: end; }
+@media (max-width: 760px) { .row { grid-template-columns: 1fr 1fr; } .row .f-mat { grid-column: 1 / -1; } }
+.lab { display: flex; align-items: center; gap: 8px; white-space: nowrap; overflow: hidden; font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+.lab .step { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--main); color: var(--ink); font-size: 12px; font-weight: 900; }
+.lab .hint { font-weight: 400; color: var(--muted); font-size: 12px; }
+.inp { position: relative; }
+.inp input { width: 100%; height: 64px; border: 2px solid #c9b2a2; background: #ffffff; border-radius: 10px; padding: 0 14px; font-size: 22px; font-weight: 700; box-shadow: inset 0 2px 0 rgba(39,30,20,.06); cursor: text; }
+.inp input:hover { border-color: var(--main); }
+.inp input:focus { border-color: var(--main); outline: none; box-shadow: 0 0 0 4px var(--main-soft); }
+.inp input::placeholder { color: #b0a497; font-weight: 500; }
+.clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: 0; background: var(--surface-2); color: var(--muted); width: 32px; height: 32px; border-radius: 50%; font-size: 18px; cursor: pointer; }
+.clear:hover { background: var(--main-soft); color: var(--ink); }
+#q { padding-right: 50px; }
+.inp .unit { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 15px; pointer-events: none; }
+#t { padding-right: 52px; font-family: var(--font-num); }
+#t::placeholder { font-family: var(--font-body); font-size: 15px; }
+.seg { display: flex; gap: 10px; height: 64px; }
+.seg button { border: 2px solid #c9b2a2; background: #ffffff; border-radius: 10px; padding: 0 26px; font-weight: 700; font-size: 18px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 0 #c9b2a2; }
+.seg button:hover { border-color: var(--main); box-shadow: 0 2px 0 var(--main); }
+.seg button:active { transform: translateY(2px); box-shadow: none; }
+.seg button[aria-pressed="true"] { background: var(--main); border-color: var(--main); color: var(--ink); box-shadow: 0 2px 0 #b84f00; }
+.seg button[aria-pressed="true"]::before { content: "✓"; }
+.seg .c { font-family: var(--font-num); font-size: 12px; font-weight: 500; opacity: .7; min-width: 3ch; text-align: left; }
+.seg button { justify-content: center; min-width: 7.5em; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: clamp(24px, 4.5vh, 44px); align-items: center; }
+.chips span { font-size: 14px; font-weight: 700; color: var(--ink); width: 100%; margin-bottom: 2px; }
+.chips button { border: 1.5px solid #c9b2a2; background: #ffffff; border-radius: 999px; padding: 8px 18px; font-size: 15px; font-weight: 500; cursor: pointer; }
+.chips button:hover { border-color: var(--main); background: var(--main-soft); }
+.chips button[aria-current="true"] { background: var(--main); color: var(--ink); border-color: var(--main); }
+
+main .wrap { padding-top: 40px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 24px; max-width: 1080px; }
+.list { padding: 22px 24px; }
+
+/* alerts */
+.alerts { display: flex; flex-direction: column; gap: 8px; }
+.alerts:empty { display: none; }
+.alert { border-radius: 10px; padding: 10px 14px; font-size: 14px; border-left: 5px solid; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.alert b { font-size: 15px; }
+.alert.bad { background: var(--bad-bg); border-color: var(--bad); }
+.alert.warn { background: var(--warn-bg); border-color: var(--warn); }
+.alert.info { background: var(--surface); border-color: var(--ok); }
+
+/* recommendation */
+.rec { display: block; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.box h2 { margin: 0 0 10px; font-size: 13px; color: var(--muted); font-weight: 700; letter-spacing: .04em; display: flex; justify-content: space-between; gap: 8px; }
+.start { border-top: 4px solid var(--accent); }
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 700px) { .tiles { grid-template-columns: 1fr; } }
+.tile { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; border: 2px solid #c9b2a2; background: #ffffff; border-radius: 12px; padding: 12px 16px 14px; cursor: pointer; box-shadow: 0 3px 0 #c9b2a2; }
+.tile:hover { border-color: var(--main); box-shadow: 0 3px 0 var(--main); background: #fffaf5; }
+.tile:active { transform: translateY(3px); box-shadow: none; }
+.tile .top { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 8px; }
+.tile em { font-style: normal; font-size: 14px; color: var(--muted); font-weight: 700; }
+.tile .cp { font-size: 12px; font-weight: 700; color: var(--ink); background: var(--main-soft); border-radius: 999px; padding: 2px 10px; white-space: nowrap; }
+.tile strong { font-family: var(--font-num); font-size: 44px; line-height: 1.1; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tile strong small { font-size: 20px; margin-left: 2px; color: var(--muted); }
+.tile.done { border-color: var(--good); box-shadow: 0 3px 0 var(--good); }
+.tile.done .cp { background: var(--good); color: #ffffff; }
+.basis { margin-top: 12px; font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+/* badges */
+.badge { display: inline-grid; place-items: center; min-width: 30px; height: 26px; padding: 0 6px; border-radius: 6px; font-weight: 900; font-size: 15px; border: 1.5px solid var(--line); color: var(--muted); }
+.badge.r3 { color: var(--good); border-color: var(--good); }
+.badge.r2 { color: var(--ok); border-color: var(--ok); }
+.badge.r1 { color: var(--warn); border-color: var(--warn); }
+.badge.r0 { color: var(--bad); border-color: var(--bad); background: var(--bad-bg); }
+.badge.ref { font-size: 11px; font-weight: 700; color: var(--ok); border-color: var(--ok); }
+.badge.none { font-size: 12px; }
+
+/* table */
+.list h2 { margin-bottom: 6px; }
+.tbl-wrap { overflow-x: auto; }
+table.tbl { width: 100%; border-collapse: collapse; min-width: 720px; }
+.tbl th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 700; padding: 8px 10px; border-bottom: 2px solid var(--line); white-space: nowrap; }
+.tbl td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.tbl td.n { font-family: var(--font-num); font-variant-numeric: tabular-nums; font-size: 15px; white-space: nowrap; }
+.tbl th.n { text-align: right; }
+.tbl td.n { text-align: right; }
+.tbl td.name { font-weight: 700; }
+.tbl td.name small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+.tbl td.memo { font-size: 13px; color: var(--muted); max-width: 320px; }
+.tbl td.memo .flag { color: var(--warn); font-weight: 700; }
+.tbl tr.x td { opacity: .55; }
+.tbl tr:hover td:not(.th) { background: var(--surface-2); }
+.tbl tr.near td.th { font-weight: 600; }
+.tbl tr.near td.th .mk { background: linear-gradient(transparent 62%, var(--yellow) 62%); padding: 0 2px; }
+.tbl a { display: inline-block; color: var(--ink); font-size: 12px; white-space: nowrap; border: 1.5px solid #c9b2a2; border-radius: 6px; padding: 2px 8px; text-decoration: none; background: #ffffff; }
+.tbl a:hover { border-color: var(--main); background: var(--main-soft); }
+.src { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.more { margin-top: 10px; }
+.empty { color: var(--muted); padding: 18px; text-align: center; }
+
+/* rules */
+details.rules { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0 18px; }
+details.rules summary { cursor: pointer; padding: 12px 0; font-weight: 700; font-size: 14px; }
+details.rules dl { margin: 0 0 14px; display: grid; grid-template-columns: 7em 1fr; gap: 4px 12px; font-size: 14px; }
+details.rules dt { color: var(--muted); }
+details.rules dd { margin: 0; }
+
+.gate { text-align: left; max-width: 620px; }
+.gate h2 { font-size: 18px; color: var(--ink); }
+.skel { height: 120px; border-radius: 12px; background: linear-gradient(90deg, var(--line), var(--surface), var(--line)); background-size: 200% 100%; animation: sh 1.4s infinite linear; opacity: .5; }
+@keyframes sh { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+footer { color: var(--muted); font-size: 12px; padding-bottom: 24px; }
+
+/* ---- 版B：左右レイアウト ---- */
+.search .wrap, header .wrap, main .wrap { max-width: 1320px; }
+.search .wrap { min-height: calc(100vh - 64px - 150px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 4vw, 64px); align-items: center; padding-top: clamp(32px, 6vh, 64px); padding-bottom: clamp(32px, 6vh, 64px); }
+.left { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.row { grid-template-columns: minmax(0, 1fr) auto; gap: 28px 20px; }
+.row .f-mat { grid-column: 1 / -1; }
+.tolist { display: none !important; }
+#rec { min-width: 0; }
+#rec .box { padding: clamp(22px, 3.5vh, 34px) clamp(22px, 2.4vw, 34px); }
+#rec .tiles { grid-template-columns: 1fr; gap: 14px; }
+#rec .tile { flex-direction: row; align-items: center; justify-content: space-between; padding: clamp(12px, 2vh, 20px) 22px; }
+#rec .tile .top { width: auto; flex-direction: column; align-items: flex-start; gap: 8px; }
+#rec .tile em { font-size: 16px; color: var(--ink); }
+#rec .tile strong { font-size: clamp(44px, 6.5vh, 68px); }
+main .wrap { padding-top: 28px; }
+@media (max-width: 900px) { .search .wrap { grid-template-columns: 1fr; min-height: 0; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="beam" aria-hidden="true"></span><h1>レーザー前例さがし</h1><small>Trotec Speedy 360（CO2 60W）</small></div>
+    <div class="status"><span><span class="dot" id="dot"></span><span id="statusText">読み込み中…</span></span><button class="btn" id="reload" type="button">読み込み直す</button></div>
+  </div>
+</header>
+
+<section class="search">
+  <div class="wrap">
+    <div class="left">
+    <form id="form" autocomplete="off">
+      <div class="row">
+        <div class="f-mat">
+          <label class="lab" for="q"><span class="step">1</span>素材を入力<span class="hint">（候補から選ぶこともできます）</span></label>
+          <div class="inp"><input type="text" id="q" list="names" placeholder="ここをクリックして素材名を入力" value="アクリル"><button type="button" class="clear" id="clearQ" aria-label="素材の入力を消す">×</button></div>
+          <datalist id="names"></datalist>
+        </div>
+      <div class="chips" style="grid-column:1/-1;margin-top:0" id="chips"><span>よく使う素材 <small style="font-weight:400;color:var(--muted);font-size:12px">（押すと入力されます）</small></span></div>
+        <div>
+          <label class="lab" for="t"><span class="step">2</span>厚さを入力</label>
+          <div class="inp"><input type="number" id="t" min="0" step="0.1" inputmode="decimal" value="3" placeholder="空欄＝指定なし"><span class="unit">mm</span></div>
+        </div>
+        <div>
+          <span class="lab" id="modeLabel"><span class="step">3</span>加工を選ぶ</span>
+          <div class="seg" role="group" aria-labelledby="modeLabel">
+            <button type="button" data-mode="カット" aria-pressed="true">カット<span class="c" id="cCut"></span></button>
+            <button type="button" data-mode="彫刻" aria-pressed="false">彫刻<span class="c" id="cEng"></span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="alerts" id="alerts" aria-live="polite"></div>
+    </div>
+    <div id="rec"></div>
+    <button type="button" class="tolist" id="toList" hidden><span id="toListText">前例を見る</span><span class="arrow" aria-hidden="true">↓</span></button>
+  </div>
+</section>
+
+<main id="listArea">
+  <div class="wrap">
+    <div id="content"></div>
+    <details class="rules">
+      <summary>この加工機の前提と禁止素材</summary>
+      <dl>
+        <dt>加工範囲</dt><dd>W810 × D506 × H210 mm（平面のみ）</dd>
+        <dt>カット厚</dt><dd>アクリル・MDFで5mm程度。2.5インチレンズや複数回加工で1cm程度まで届くことあり</dd>
+        <dt>データ</dt><dd>カット＝赤R255・細線 ／ 彫刻＝黒R0。文字はアウトライン化</dd>
+        <dt>Rubyの設定</dt><dd>材料は「0_加工用」「0_test_cut」「0_test_engrave」だけ使う。エアアシストON、Zオフセット0</dd>
+        <dt>禁止</dt><dd>塩ビ（PVC）、鏡、金属のカット、シリコン、ウールフェルト、ABS、組成のわからない樹脂</dd>
+      </dl>
+    </details>
+    <footer>前例は Notion の加工記録データベースから定期的に書き出したものです。2023年の発振器交換（42W→62W）より前の記録は強めに出ることがあります。必ずテスト加工してから本番に入ってください。</footer>
+  </div>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const CHIPS = ["アクリル", "MDF", "シナ合板", "ベニヤ", "ヒノキ", "ウォールナット", "革", "スタンプ用ゴム", "厚紙", "段ボール", "フェルト", "ガラス"];
+
+  const state = { th: 3, mode: "カット", fcn: [], loaded: false, loading: false, showAll: false };
+  const $ = (id) => document.getElementById(id);
+
+  const toHira = (s) => s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+  const norm = (s) => toHira(String(s || "").normalize("NFKC").toLowerCase()).replace(/[\s・（）()\-_/]/g, "");
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const num = (v) => { const n = typeof v === "number" ? v : parseFloat(v); return Number.isFinite(n) ? n : null; };
+
+  const SYN = [
+    ["クルミ", "くるみ", "胡桃", "ウォールナット", "ウォルナット", "walnut"],
+    ["ヒノキ", "ひのき", "檜", "桧"], ["スギ", "杉"],
+    ["シナ", "シナベニヤ", "シナ合板", "シナベニア"], ["ベニヤ", "合板", "ラワン"],
+    ["アクリル", "plexiglas", "プレキシ"], ["革", "皮", "レザー", "本革", "合皮", "牛革"],
+    ["ゴム", "ラバー", "rubber"], ["段ボール", "ダンボール"], ["ガラス", "glass"],
+    ["キリ", "桐"], ["ナラ", "オーク"], ["メープル", "楓", "かえで"], ["竹", "バンブー"],
+    ["スチレンボード", "スチボ"], ["イラストボード", "イラストレーションボード"], ["PET", "ペット"],
+    ["石", "stone", "御影石", "大理石", "marble", "granite"],
+  ];
+  function terms(q) {
+    const n = norm(q); if (!n) return [];
+    const set = new Set([n]);
+    for (const g of SYN) { const ng = g.map(norm); if (ng.some((x) => x && (n.includes(x) || x.includes(n)))) ng.forEach((x) => set.add(x)); }
+    return [...set];
+  }
+
+  const NG = [
+    { k: ["塩ビ", "塩化ビニル", "pvc", "ビニール", "クリアファイル", "ビニル"], t: "塩ビ（PVC）は加工できません", d: "燃やすと有害ガスが出ます。クリアファイルやカッティングシートも塩ビが多いので素材表示を確認してください。" },
+    { k: ["鏡", "ミラー", "mirror"], t: "鏡・ミラーは加工できません", d: "レーザーを反射して機械を傷めるおそれがあります。" },
+    { k: ["金属", "アルミ", "ステンレス", "鉄", "真鍮", "銅", "チタン", "metal"], t: "金属はカットできません", d: "塗装面やアルマイトの表面マーキングだけ前例があります。スタッフに確認してください。" },
+    { k: ["シリコン", "silicone"], t: "シリコンは加工できない素材です", d: "店舗の操作ガイドで加工不可になっています。" },
+    { k: ["テフロン", "ptfe", "フッ素"], t: "テフロン（PTFE）は加工できません", d: "有害なガスが出る素材です。" },
+    { k: ["abs"], t: "ABS樹脂は加工禁止です", d: "店舗の記録で加工禁止になっています。" },
+    { k: ["ウール", "羊毛"], t: "ウールフェルトは加工できません", d: "ポリエステルのフェルトなら前例があります。" },
+    { k: ["炭素繊維", "カーボン", "cfrp"], t: "炭素繊維は加工できません", d: "加工非推奨の素材です。" },
+    { k: ["難燃"], t: "「難燃」と書かれた素材は要注意", d: "臭素を含むことがあります。素材の詳細がわかるまで加工しないでください。" },
+    { k: ["エンプラ", "ポリカ"], t: "エンプラ・ポリカーボネートは要相談", d: "店舗ガイドではエンプラは加工できない素材です。" },
+  ];
+  function warnings(q, t, mode) {
+    const n = norm(q), out = [];
+    for (const w of NG) if (w.k.some((k) => n.includes(norm(k)))) out.push({ cls: "bad", t: w.t, d: w.d });
+    if (t != null) {
+      if (t > 210) out.push({ cls: "bad", t: "高さ210mmを超えると機械に入りません", d: "加工テーブル込みで最大210mmです。" });
+      else if (t > 10 && mode === "カット") out.push({ cls: "warn", t: `${t}mmのカットはかなり厚めです`, d: "彫刻なら問題ありません。カットは2.5インチレンズ＋とても遅い速度の前例が少しあるだけです。スタッフに相談してください。" });
+      else if (t > 5 && mode === "カット") out.push({ cls: "warn", t: `${t}mmは通常のカット厚（5mm程度）を超えます`, d: "下の一覧で、2.5インチレンズや2回加工の前例を確認してください。" });
+    }
+    return out;
+  }
+
+  // ---- data ----
+  function payloadOf(res) {
+    let p = res && res.payload;
+    if (typeof p === "string") { try { p = JSON.parse(p); } catch (_) { p = null; } }
+    if ((!p || !p.results) && res && Array.isArray(res.content)) {
+      const tb = res.content.find((c) => c.type === "text");
+      if (tb) { try { p = JSON.parse(tb.text); } catch (_) {} }
+    }
+    return p || {};
+  }
+  async function load() {
+    if (state.loading) return;
+    state.loading = true;
+    setStatus("", "記録を読み込み中…");
+    $("rec").innerHTML = '<div class="skel"></div>'; $("content").innerHTML = '<div class="skel" style="height:280px"></div>';
+    try {
+      const res = await fetch(`data/records.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(String(res.status));
+      const data = await res.json();
+      state.fcn = (data.records || []).map((r) => ({ src: "fcn", name: r.name || "", cat: r.cat || "", th: num(r.th), type: r.type === "彫刻" || r.type === "その他" ? "彫刻" : "カット", power: num(r.power), speed: num(r.speed), freq: r.freq != null ? String(r.freq) : "", memo: r.memo || "", result: r.result || "", url: r.url || "" }));
+      state.loaded = true;
+      const upd = data.updatedAt ? new Date(data.updatedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+      setStatus("live", `記録 ${state.fcn.length}件${upd ? ` ・ ${upd} 更新` : ""}`);
+      $("names").innerHTML = [...new Set(state.fcn.map((r) => r.name))].filter(Boolean).sort((a, b) => a.localeCompare(b, "ja")).map((n) => `<option value="${esc(n)}"></option>`).join("");
+      render();
+    } catch (err) {
+      setStatus("err", "記録を読み込めませんでした");
+      gate("記録を読み込めませんでした", "通信を確認して、読み込み直してください。", true);
+    } finally { state.loading = false; }
+  }
+  function setStatus(kind, text) { $("dot").className = "dot" + (kind ? " " + kind : ""); $("statusText").textContent = text; }
+  function gate(title, body, btn) {
+    $("content").innerHTML = ""; $("toList").hidden = true;
+    $("rec").innerHTML = `<div class="box gate"><h2>${esc(title)}</h2><p>${esc(body)}</p>${btn ? '<button class="btn primary" id="gateBtn" type="button">読み込み直す</button>' : ""}</div>`;
+    const b = $("gateBtn"); if (b) b.addEventListener("click", () => load());
+  }
+
+  // ---- search ----
+  const RANK = { "◎": 3, "○": 2, "△": 1, "✕": 0 };
+  const COMMON_TH = [0.5, 1, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 15, 18, 20, 25, 30];
+  function syncThick() { return num($("t").value); }
+  function search() {
+    const q = $("q").value.trim(), ts = terms(q);
+    const hits = ts.length ? state.fcn.filter((r) => { const n = norm(r.name); return ts.some((x) => n.includes(x)); }) : [];
+    const t = syncThick(hits);
+    const rank = (r) => r.result in RANK ? RANK[r.result] : 1.2;
+    const dist = (r) => t != null ? (r.th != null ? Math.abs(r.th - t) : 6) : 0;
+    const sortFn = (a, b) => (Math.round(dist(a) * 10) - Math.round(dist(b) * 10)) || (rank(b) - rank(a));
+    const cut = hits.filter((r) => r.type === "カット").sort(sortFn);
+    const eng = hits.filter((r) => r.type === "彫刻").sort(sortFn);
+    return { q, t, cut, eng, dist };
+  }
+  const nice = (v) => v >= 10 ? Math.round(v) : v >= 1 ? Math.round(v * 10) / 10 : Math.round(v * 100) / 100;
+  function pickBase(list) {
+    const ok = (r) => r.power != null && r.speed != null;
+    return list.find((r) => ok(r) && (r.result === "◎" || r.result === "○")) || list.find((r) => ok(r) && r.result !== "✕") || null;
+  }
+
+  // ---- render ----
+  function badge(r) {
+    if (r.result in RANK) return `<span class="badge r${RANK[r.result]}">${esc(r.result)}</span>`;
+    return `<span class="badge none">記録なし</span>`;
+  }
+  function render() {
+    const { q, t, cut, eng, dist } = search();
+    $("cCut").textContent = state.loaded && q ? cut.length : "";
+    $("cEng").textContent = state.loaded && q ? eng.length : "";
+    document.querySelectorAll("#chips button").forEach((b) => b.setAttribute("aria-current", String(norm(b.dataset.q) === norm(q))));
+    const al = warnings(q, t, state.mode);
+    const list = state.mode === "カット" ? cut : eng;
+    if (state.loaded && q && cut.length + eng.length === 0) al.push({ cls: "info", t: "前例が見つかりません", d: "別の呼び方（ウォールナット↔クルミ、シナベニヤ↔シナ合板 など）や、カテゴリ名で探してみてください。" });
+    $("alerts").innerHTML = al.map((a) => `<div class="alert ${a.cls}"><b>${esc(a.t)}</b><span>${esc(a.d)}</span></div>`).join("");
+    if (!state.loaded) return;
+    const clearList = () => { $("content").innerHTML = ""; $("toList").hidden = true; };
+    if (!q) { clearList(); $("rec").innerHTML = `<div class="box empty">素材を入力するか、上の「よく使う素材」から選んでください。</div>`; return; }
+    if (!list.length) { clearList(); $("rec").innerHTML = `<div class="box empty">${state.mode}の前例はありません。${(state.mode === "カット" ? eng : cut).length ? `${state.mode === "カット" ? "彫刻" : "カット"}の前例は${(state.mode === "カット" ? eng : cut).length}件あります。` : ""}</div>`; return; }
+
+    const fl = state.mode === "カット" ? "Hz" : "PPI";
+    const base = pickBase(list);
+    let rec = "";
+    if (base) {
+      const far = t != null && base.th != null && Math.abs(base.th - t) > 0.6;
+      const tile = (label, val, unit) => val == null || val === "" ? `<div class="tile" aria-disabled="true"><div class="top"><em>${label}</em></div><strong>—</strong></div>`
+        : `<button type="button" class="tile" data-copy="${esc(val)}" aria-label="${label} ${esc(val)}${unit} をコピー"><div class="top"><em>${label}</em><span class="cp">クリックでコピー</span></div><strong>${esc(val)}${unit ? `<small>${unit}</small>` : ""}</strong></button>`;
+      rec = `<div class="rec">
+        <div class="box start">
+          <h2><span>おすすめの開始値（${state.mode}）</span><span>数値を押すとコピーできます</span></h2>
+          <div class="tiles">
+            ${tile("パワー", base.power, "%")}
+            ${tile("スピード", base.speed, "%")}
+            ${tile(fl, base.freq || null, "")}
+          </div>
+          <div class="basis">${badge(base)}<span>もとにした前例：${esc(base.name)}${base.th != null ? ` ${base.th}mm` : ""}</span></div>
+          ${far ? `<div class="basis">厚さが違う前例です。テスト加工で切れ具合を見て、スピードで調整してください。</div>` : ""}
+        </div>
+      </div>`;
+    }
+    const LIMIT = 15;
+    const shown = state.showAll ? list : list.slice(0, LIMIT);
+    const rows = shown.map((r) => {
+      const flag = /禁止|加工できない|入力ミス/.test(r.memo);
+      const near = t != null && r.th != null && dist(r) <= 0.5;
+      return `<tr class="${r.result === "✕" ? "x" : ""}${near ? " near" : ""}">
+        <td>${badge(r)}</td>
+        <td class="name">${esc(r.name)}<small>${esc([r.cat].filter(Boolean).join(" ・ "))}</small></td>
+        <td class="n th">${r.th != null ? `<span class="mk">${r.th}mm</span>` : "—"}</td>
+        <td class="n">${r.power != null ? r.power + "%" : "—"}</td>
+        <td class="n">${r.speed != null ? r.speed + "%" : "—"}</td>
+        <td class="n">${esc(r.freq || "—")}</td>
+        <td class="memo">${r.memo ? (flag ? `<span class="flag">${esc(r.memo)}</span>` : esc(r.memo)) : ""}</td>
+        <td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Notionで開く</a>` : ""}</td>
+      </tr>`;
+    }).join("");
+    $("rec").innerHTML = rec;
+    $("toListText").textContent = `${state.mode}の前例 ${list.length}件を見る`;
+    $("toList").hidden = false;
+    $("content").innerHTML = `
+      <div class="box list">
+        <h2><span>${esc(q)}${t != null ? ` ${t}mm` : ""} の${state.mode}の前例 ${list.length}件</span><span>厚さが近い順 → 結果の良い順</span></h2>
+        <div class="tbl-wrap"><table class="tbl">
+          <thead><tr><th>結果</th><th>素材</th><th class="n">厚さ</th><th class="n">パワー</th><th class="n">スピード</th><th class="n">${fl}</th><th>メモ</th><th></th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table></div>
+        ${list.length > LIMIT ? `<button class="btn more" type="button" id="moreBtn">${state.showAll ? "上位15件だけ表示" : `残り${list.length - LIMIT}件も表示`}</button>` : ""}
+      </div>`;
+  }
+
+  // ---- events ----
+  $("chips").insertAdjacentHTML("beforeend", CHIPS.map((n) => `<button type="button" data-q="${esc(n)}">${esc(n)}</button>`).join(""));
+  $("form").addEventListener("submit", (e) => e.preventDefault());
+  $("q").addEventListener("input", () => { state.showAll = false; render(); });
+  $("t").addEventListener("input", render);
+  $("toList").addEventListener("click", () => $("listArea").scrollIntoView({ behavior: "smooth", block: "start" }));
+  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+    state.mode = b.dataset.mode; state.showAll = false;
+    document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    render();
+  }));
+  $("chips").addEventListener("click", (e) => { const b = e.target.closest("button[data-q]"); if (!b) return; $("q").value = b.dataset.q; state.showAll = false; render(); });
+  const onClick = async (e) => {
+    if (e.target.closest("#moreBtn")) { state.showAll = !state.showAll; render(); return; }
+    const c = e.target.closest("button[data-copy]");
+    if (c) {
+      const cp = c.querySelector(".cp");
+      document.querySelectorAll(".tile.done").forEach((x) => { x.classList.remove("done"); const p = x.querySelector(".cp"); if (p) p.textContent = "クリックでコピー"; });
+      try { await navigator.clipboard.writeText(c.dataset.copy); c.classList.add("done"); if (cp) cp.textContent = "✓ コピーしました"; }
+      catch (_) { if (cp) cp.textContent = "コピーできませんでした"; }
+      setTimeout(() => { c.classList.remove("done"); if (cp) cp.textContent = "クリックでコピー"; }, 2500);
+    }
+  };
+  $("content").addEventListener("click", onClick);
+  $("rec").addEventListener("click", onClick);
+  $("reload").addEventListener("click", () => load());
+  $("clearQ").addEventListener("click", () => { $("q").value = ""; state.showAll = false; render(); $("q").focus(); });
+
+  render();
+  $("rec").innerHTML = '<div class="skel"></div>'; $("content").innerHTML = '<div class="skel" style="height:280px"></div>';
+  load();
+})();
+</script>
+</body>
+</html>
