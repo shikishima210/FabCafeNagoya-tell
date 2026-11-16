@@ -5,6 +5,7 @@ Trotec Speedy 360（CO2 60W）用。素材と厚さを入れると、過去の�
 - 記録の元データ：公開中の Notion「レーザーカッターデータベース」
   https://honey-addition-681.notion.site/3a4e13ace3b544e28d27275a47def15d
 - GitHub Actions が 1 時間ごとに Notion を読み、`data/records.json` に書き出します（変更があったときだけコミット）。
+- タグに `default` が付いた記録（Trotec の初期設定＝メーカー参考値）は載せません。
 - アプリ（`index.html`）は `data/records.json` を読むだけなので、サーバーも Notion の鍵もいりません。
 
 ## 公開の手順（初回だけ）

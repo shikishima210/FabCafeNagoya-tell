@@ -86,6 +86,8 @@ async function main() {
         if (!p) continue;
         const name = text(p[k.name]);
         if (!name) continue;
+        const tags = text(p[k.tags]).split(",").map((t) => t.trim()).filter(Boolean);
+        if (tags.includes("default")) continue; // Trotec の初期設定（メーカー参考値）は載せない
         records.push({
           name,
           cat,
@@ -96,7 +98,7 @@ async function main() {
           freq: text(p[k.freq]),
           result: text(p[k.result]),
           memo: text(p[k.memo]),
-          tags: text(p[k.tags]).split(",").map((t) => t.trim()).filter(Boolean),
+          tags,
           url: `${SITE}/${id.replace(/-/g, "")}`,
         });
       }
@@ -105,7 +107,7 @@ async function main() {
     console.log(`${cat}: 累計 ${records.length}件`);
   }
 
-  if (records.length < 50) throw new Error(`記録が ${records.length}件しか取れませんでした。書き出しを中止します。`);
+  if (records.length < 30) throw new Error(`記録が ${records.length}件しか取れませんでした。書き出しを中止します。`);
   records.sort((a, b) => a.cat.localeCompare(b.cat, "ja") || a.name.localeCompare(b.name, "ja"));
 
   try {
