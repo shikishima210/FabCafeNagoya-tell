@@ -9,25 +9,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* 配色「シトラス」70:25:5 ／ ベース #FFF2E4・メイン #F26B00・アクセント #E1D100（文字色はベースの明度ランプ #271E14／#685D51） */
-  /* 加工機横のPC用。上=検索バー、中=おすすめ開始値とテスト値、下=前例の一覧表 */
-  --bg: #fff2e4;
+  /* 配色：店のWebサイトに合わせる。墨 #1C1D1F／白／ライトグレー #F2F5F6／ウォームグレー #87766D／赤 #D80C18（アクセントだけに使う） */
+  /* 動き：変化は 0.4s ease、出てくる時は下から40pxふわっと（fadeInUp） */
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-2: #fff9f2;
-  --ink: #271e14;
-  --muted: #685d51;
-  --line: #eedcd3;
-  --main: #f26b00;
-  --main-soft: #ffe3cc;
-  --accent: #f26b00;
-  --accent-soft: #ffe3cc;
-  --yellow: #e1d100;
-  --good: #2e7d32;
+  --surface-2: #f2f5f6;
+  --ink: #1c1d1f;
+  --muted: #87766d;
+  --line: #d0d4dd;
+  --main: #d80c18;
+  --main-soft: #fbe4e5;
+  --accent: #d80c18;
+  --accent-soft: #fbe4e5;
+  --yellow: #fbe4e5;
+  --good: #1f7a3a;
   --ok: #2f5f9e;
   --warn: #9a5b00;
-  --bad: #c62828;
+  --bad: #d80c18;
   --warn-bg: #fff8e6;
   --bad-bg: #fdecea;
+  --ease: .4s ease;
   --font-body: "Zen Kaku Gothic New", "Yu Gothic", YuGothic, "Hiragino Sans", "Meiryo", sans-serif;
   --font-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   color-scheme: light;
@@ -200,6 +201,88 @@ footer { color: var(--muted); font-size: 12px; padding-bottom: 24px; }
 #rec .tile strong { font-size: clamp(44px, 6.5vh, 68px); }
 main .wrap { padding-top: 28px; }
 @media (max-width: 900px) { .search .wrap { grid-template-columns: 1fr; min-height: 0; } }
+
+/* ===== テーマ：店のWebサイトに合わせた見た目と動き ===== */
+body { background: #ffffff; }
+a, button, input, .tile, .chips button, .seg button, .btn, .tbl a { transition: all var(--ease); }
+
+/* ヘッダー：白地＋墨の文字、下に細い線。ボタンは墨の地に白文字と矢印 */
+header.top { background: #ffffff; color: var(--ink); border-bottom: 1px solid var(--line); }
+header.top .brand h1 { font-weight: 900; letter-spacing: .04em; }
+header.top .brand .beam { background: var(--main); width: 18px; height: 18px; border-radius: 0 0 9px 9px; }
+header.top .brand small, header.top .status { color: var(--muted); opacity: 1; }
+header.top .btn { background: var(--ink); color: #ffffff; border: 0; border-radius: 0 0 10px 10px; padding: 8px 16px; font-weight: 700; }
+header.top .btn::after { content: "→"; margin-left: 10px; display: inline-block; transition: transform var(--ease); }
+header.top .btn:hover { background: var(--main); color: #ffffff; }
+header.top .btn:hover::after { transform: translateX(4px); }
+.dot.live { background: var(--main); box-shadow: none; }
+
+/* 上の段 */
+.search { background: #ffffff; border-bottom: 0; position: relative; overflow: hidden; }
+.lab { color: var(--ink); font-weight: 900; }
+.lab .step { background: var(--main); color: #ffffff; border-radius: 0 0 50% 50%; width: 24px; height: 24px; font-size: 12px; }
+.inp input { border: 1.5px solid var(--line); border-radius: 0; box-shadow: none; background: #ffffff; }
+.inp input:hover { border-color: var(--ink); }
+.inp input:focus { border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--main); }
+.clear { background: var(--surface-2); }
+.clear:hover { background: var(--ink); color: #ffffff; }
+.seg button { border: 1.5px solid var(--line); border-radius: 0; box-shadow: none; background: #ffffff; color: var(--ink); }
+.seg button:hover { border-color: var(--ink); box-shadow: none; }
+.seg button:active { transform: none; }
+.seg button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #ffffff; box-shadow: inset 0 -4px 0 var(--main); }
+.chips button { border: 1.5px solid var(--line); background: #ffffff; color: var(--ink); }
+.chips button:hover { border-color: var(--ink); background: #ffffff; transform: translateY(-2px); }
+.chips button[aria-current="true"] { background: var(--ink); color: #ffffff; border-color: var(--ink); }
+
+/* おすすめの開始値：上に墨の太線、数値のカード */
+.box { border: 1px solid var(--line); border-radius: 0; }
+.start { border-top: 0; position: relative; }
+.start::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 4px; background: var(--ink); }
+#rec .box h2 { font-weight: 900; }
+.tile { border: 1.5px solid var(--line); border-radius: 0; box-shadow: none; background: #ffffff; }
+.tile:hover { border-color: var(--ink); box-shadow: 0 10px 24px rgba(28,29,31,.10); background: #ffffff; transform: translateY(-3px); }
+.tile:active { transform: translateY(0); box-shadow: none; }
+.tile .cp { background: var(--main-soft); color: var(--main); border-radius: 0 0 8px 8px; }
+.tile:hover .cp { background: var(--main); color: #ffffff; }
+.tile.done { border-color: var(--main); box-shadow: none; }
+.tile.done .cp { background: var(--main); color: #ffffff; }
+.tile strong { color: var(--ink); }
+.tile strong small { color: var(--muted); }
+
+/* 前例の一覧：ライトグレーの帯の上に白い表 */
+#listArea { background: var(--surface-2); }
+.list { background: #ffffff; }
+.tbl tr.near td.th .mk { background: linear-gradient(transparent 62%, var(--main-soft) 62%); }
+.tbl tbody tr { transition: background var(--ease); }
+.tbl tbody tr:hover { background: var(--surface-2); }
+.tbl a { border: 1.5px solid var(--ink); border-radius: 0 0 8px 8px; background: #ffffff; color: var(--ink); }
+.tbl a::after { content: " →"; }
+.tbl a:hover { background: var(--ink); color: #ffffff; }
+.btn.more { background: var(--ink); color: #ffffff; border: 0; border-radius: 0 0 10px 10px; padding: 10px 20px; font-weight: 700; }
+.btn.more:hover { background: var(--main); }
+details.rules { border-radius: 0; }
+:focus-visible { outline: 2px solid var(--main); outline-offset: 2px; }
+
+/* 背景の赤い図形（店のサイトの幾何学モチーフ）。広い画面の左右の余白にだけ出す */
+.deco { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+.deco i { position: absolute; background: var(--main); opacity: 0; animation: decoIn .9s ease forwards; }
+.deco .a { width: 120px; height: 160px; left: -40px; top: 18%; border-radius: 0 0 40px 40px; animation-delay: .1s; }
+.deco .b { width: 220px; height: 220px; right: -110px; top: 6%; border-radius: 0 0 0 220px; animation-delay: .25s; }
+.deco .c { width: 90px; height: 24px; left: 4%; bottom: 14%; border-radius: 0 0 12px 12px; animation-delay: .4s; }
+.deco .d { width: 140px; height: 140px; right: -40px; bottom: -40px; border-radius: 50%; animation-delay: .55s; }
+@keyframes decoIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+@media (max-width: 1440px) { .deco { display: none; } }
+.search .wrap { position: relative; z-index: 1; }
+
+/* 出てくる時の動き */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+.enter { animation: fadeInUp .6s ease both; }
+.enter .tile:nth-child(2) { animation: fadeInUp .6s ease .08s both; }
+.enter .tile:nth-child(3) { animation: fadeInUp .6s ease .16s both; }
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.left { animation: fadeInUp .6s ease both; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .deco i { opacity: 1; } }
 </style>
 </head>
 <body>
@@ -211,6 +294,7 @@ main .wrap { padding-top: 28px; }
 </header>
 
 <section class="search">
+  <div class="deco" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
   <div class="wrap">
     <div class="left">
     <form id="form" autocomplete="off">
@@ -374,6 +458,7 @@ main .wrap { padding-top: 28px; }
     if (r.result in RANK) return `<span class="badge r${RANK[r.result]}">${esc(r.result)}</span>`;
     return `<span class="badge none">記録なし</span>`;
   }
+  let lastRecKey = "", listSeen = false;
   function render() {
     const { q, t, cut, eng, dist } = search();
     $("cCut").textContent = state.loaded && q ? cut.length : "";
@@ -425,10 +510,12 @@ main .wrap { padding-top: 28px; }
       </tr>`;
     }).join("");
     $("rec").innerHTML = rec;
+    const recKey = base ? [state.mode, base.name, base.th, base.power, base.speed, base.freq].join("|") : "";
+    if (recKey !== lastRecKey) { const b = $("rec").querySelector(".box"); if (b) b.classList.add("enter"); lastRecKey = recKey; }
     $("toListText").textContent = `${state.mode}の前例 ${list.length}件を見る`;
     $("toList").hidden = false;
     $("content").innerHTML = `
-      <div class="box list">
+      <div class="box list reveal${listSeen ? " in" : ""}">
         <h2><span>${esc(q)}${t != null ? ` ${t}mm` : ""} の${state.mode}の前例 ${list.length}件</span><span>厚さが近い順 → 結果の良い順</span></h2>
         <div class="tbl-wrap"><table class="tbl">
           <thead><tr><th>結果</th><th>素材</th><th class="n">厚さ</th><th class="n">パワー</th><th class="n">スピード</th><th class="n">${fl}</th><th>メモ</th><th></th></tr></thead>
@@ -436,6 +523,11 @@ main .wrap { padding-top: 28px; }
         </table></div>
         ${list.length > LIMIT ? `<button class="btn more" type="button" id="moreBtn">${state.showAll ? "上位15件だけ表示" : `残り${list.length - LIMIT}件も表示`}</button>` : ""}
       </div>`;
+    const lb = $("content").querySelector(".list.reveal:not(.in)");
+    if (lb) {
+      if ("IntersectionObserver" in window) { const io = new IntersectionObserver((es) => { if (es.some((x) => x.isIntersecting)) { lb.classList.add("in"); listSeen = true; io.disconnect(); } }, { threshold: 0.08 }); io.observe(lb); }
+      else { lb.classList.add("in"); listSeen = true; }
+    }
   }
 
   // ---- events ----
