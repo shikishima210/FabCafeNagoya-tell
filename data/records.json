@@ -1,0 +1,6456 @@
+{
+ "updatedAt": "2026-11-16T05:13:36.004Z",
+ "source": "https://honey-addition-681.notion.site/3a4e13ace3b544e28d27275a47def15d",
+ "count": 420,
+ "records": [
+  {
+   "name": "0_fabkit stump_rubber",
+   "cat": "Fabキット-laser",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 7,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/0f79df08a1714c04ad57e89ff1b69dea"
+  },
+  {
+   "name": "0_fabkit stump_rubber",
+   "cat": "Fabキット-laser",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/7ed670d213ba4747b39628434a32bf2e"
+  },
+  {
+   "name": "0_fabkit stump_sticker",
+   "cat": "Fabキット-laser",
+   "type": "カット",
+   "th": null,
+   "power": 80,
+   "speed": 1,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/84280732eb884d3bbb285d448d246c11"
+  },
+  {
+   "name": "0_fabkit stump_wood",
+   "cat": "Fabキット-laser",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 35,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/07ac34a9890042b0b07c280276ff7e94"
+  },
+  {
+   "name": "0_fabkit_miyuki",
+   "cat": "Fabキット-laser",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "20000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/c1ba665d85b04dfcb7f8799f88a1a63b"
+  },
+  {
+   "name": "0_fabkit_miyuki",
+   "cat": "Fabキット-laser",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 20,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/ff702f3af3264727ba679cd76984e68d"
+  },
+  {
+   "name": "カッティングボード",
+   "cat": "Fabキット-laser",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "0_fabkit"
+   ],
+   "url": "https://honey-addition-681.notion.site/3fad2f903a2e44eaae59b4f224e8e411"
+  },
+  {
+   "name": "ウレタン",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 5,
+   "power": 40,
+   "speed": 0.6,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/e62f98818abb4d92af5dff0350482d5f"
+  },
+  {
+   "name": "キットのスタンプ",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 6,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/206f369aea9e80c3bae8e464f6248976"
+  },
+  {
+   "name": "キットのスタンプ",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "20000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/206f369aea9e8003b185d86603d8d4ad"
+  },
+  {
+   "name": "ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 1.5,
+   "power": 100,
+   "speed": 2.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "rubber",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/f4b1d66f34a84ac2b634a21214fc6b2b"
+  },
+  {
+   "name": "ゴム",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 1.5,
+   "power": 100,
+   "speed": 16,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/d0baf67b237a407d88362f6c7854b84a"
+  },
+  {
+   "name": "ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 2.3,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "rubber",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c78f547836164ec4af4b1e2a7f63cc01"
+  },
+  {
+   "name": "シリコン",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 7,
+   "power": 90,
+   "speed": 6,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/4fa54ede285a4be0ab12e5daf800c40a"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 2.3,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/723f41f3e31e4c77b18fdc41d36f6b0c"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.25,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/121f369aea9e80b3a0d3cd71cb4111cd"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 2.3,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/7e6f402a996f4a46a72edd9bb65151f0"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 2.3,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/5db2c52bc2c1412a882a58fb473f3ed8"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 2,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/ee1125305f5c4e05bce1a42de6c70dd1"
+  },
+  {
+   "name": "スタンプ用ゴム",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 6,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/836ff4250bf642b0be317a469c327340"
+  },
+  {
+   "name": "スタンプ用ゴム(よい。(絵柄が小さいとスタンプした時に隅がよごれる）",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 12,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/f50c5701f1f841139096fd56669d2e2c"
+  },
+  {
+   "name": "スタンプ用ゴム(絵柄が画面いっぱいのものは良いが小さい絵柄やシンプルなものは汚れる)",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 15,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/c42d29e11a1f4525897be91464a9a5c5"
+  },
+  {
+   "name": "スタンプ用ゴム(綺麗に押せる。線が細いものは折れるかもしれない)",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 4,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/0f927792d02d4e59abfe2d5cee2db585"
+  },
+  {
+   "name": "スタンプ用ゴム(綺麗に押せる。猫のシルエットのように絵柄がべた塗りのものは特にこれが良い。)",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 6,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/e52a1691c9094b3e9d906b7e18110129"
+  },
+  {
+   "name": "スタンプ用ゴム(綺麗に押せる(絵柄がべた塗りではなく線のものはこれがよい）",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 2.3,
+   "power": 90,
+   "speed": 8,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/907e9695d9cf47df885700ee57f8f080"
+  },
+  {
+   "name": "多孔質ゴム",
+   "cat": "ゴム",
+   "type": "彫刻",
+   "th": 3.5,
+   "power": 100,
+   "speed": 24,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/f65659247fd640d0bc63949baba4d1ff"
+  },
+  {
+   "name": "多孔質ゴム",
+   "cat": "ゴム",
+   "type": "カット",
+   "th": 3.5,
+   "power": 100,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "rubber"
+   ],
+   "url": "https://honey-addition-681.notion.site/08589e0e8ba04f03a2ff23671f867426"
+  },
+  {
+   "name": "Glass Lead Glass",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 4,
+   "power": 40,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/8921028df65349dcbd2435071d6c1a1f"
+  },
+  {
+   "name": "Glass Plate Glass",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 2,
+   "power": 85,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/2bf5de97fcf040258de47ad946b79b4e"
+  },
+  {
+   "name": "Goldring Goldring black",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 9,
+   "power": 100,
+   "speed": 24,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/fa6028dfb0a446d9aeebae9e25779682"
+  },
+  {
+   "name": "Goldring Goldring wood",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 9,
+   "power": 100,
+   "speed": 60,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/acba77a051f5428fb04e4c2a42b0ff3a"
+  },
+  {
+   "name": "Goldring Twin",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 14.3,
+   "power": 100,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/80f03b6085d44777bfc8d3ded04a9918"
+  },
+  {
+   "name": "NRスポンジ",
+   "cat": "その他",
+   "type": "カット",
+   "th": 5,
+   "power": 40,
+   "speed": 0.4,
+   "freq": "",
+   "result": "◎",
+   "memo": "",
+   "tags": [],
+   "url": "https://honey-addition-681.notion.site/a2337ddbfa424fe3a57d4e0563009b30"
+  },
+  {
+   "name": "stone",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 15,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "stone"
+   ],
+   "url": "https://honey-addition-681.notion.site/fd071993543349c1a7e71ec38cb6f73a"
+  },
+  {
+   "name": "Stone Concrete",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 100,
+   "speed": 6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "stone",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/97ba07b35d02490f8eb443826f66e188"
+  },
+  {
+   "name": "Stone Granite",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 100,
+   "speed": 3.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "stone",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/4a0a294147a246ac81944dfe54bcbf63"
+  },
+  {
+   "name": "Stone Marble",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 100,
+   "speed": 5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "stone",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/eec7020b1d6a4528aa81e73e55efa565"
+  },
+  {
+   "name": "TroGlass",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 80,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/b7e6ca3638e54510b8c84df11ebc02b6"
+  },
+  {
+   "name": "TroGlass",
+   "cat": "その他",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/8bcedb974986479c97f7525ac34560d5"
+  },
+  {
+   "name": "TroGlass 3.0mm (0.12'')",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 3,
+   "power": 22,
+   "speed": 20,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/3bc69228566f4c5d984ae34a409f45d1"
+  },
+  {
+   "name": "TroGlass 3.0mm (0.12'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3,
+   "power": 60,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/515f1e3985c045d8b39d5d618e2e9171"
+  },
+  {
+   "name": "TroLase",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 3.2,
+   "power": 75,
+   "speed": 70,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/346dff3a9b2a4974a7697b33be434b40"
+  },
+  {
+   "name": "TroLase",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 3.2,
+   "power": 100,
+   "speed": 80,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/ee15e11880a04486aedae415682c8530"
+  },
+  {
+   "name": "TroLase 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 30,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/0aa2c9382c9842aa9b8d6892e7d73ece"
+  },
+  {
+   "name": "TroLase 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 95,
+   "speed": 4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/b5d491cb6b12430d9ff8b2eb80228694"
+  },
+  {
+   "name": "TroLase 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 70,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/77818826d85a4d52abe1526e549df4c8"
+  },
+  {
+   "name": "TroLase 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 100,
+   "speed": 1.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/24cd99c8b9b34639aaec2cc887e87280"
+  },
+  {
+   "name": "TroLase 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/57d52743b022434c931baf5daaf9f8ac"
+  },
+  {
+   "name": "TroLase 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 100,
+   "speed": 0.7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/be6e2be959e644e59d4f3700aeab30bd"
+  },
+  {
+   "name": "TroLase ADA 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 30,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/f4d29bc3a3eb438ebbe95f51a5fbf4bc"
+  },
+  {
+   "name": "TroLase ADA 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 65,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/1d9785d741a348df9fbad9e313b9d2b8"
+  },
+  {
+   "name": "TroLase ADA 1.0mm (0.040'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1,
+   "power": 30,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/fde48109d5a64003a338eddb9d236180"
+  },
+  {
+   "name": "TroLase ADA 1.0mm (0.040'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1,
+   "power": 70,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/3415bf7cd47249e596f93828487d1b63"
+  },
+  {
+   "name": "TroLase ADA 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 50,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/ac0bf1a6997e405c9eb9ac7229f44fbc"
+  },
+  {
+   "name": "TroLase ADA 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 90,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/898d33a673c9450e980983e37f26021c"
+  },
+  {
+   "name": "TroLase ADA 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 65,
+   "speed": 0.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c2acc89f73f54a548d93558a09240370"
+  },
+  {
+   "name": "TroLase ADA 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/f9c41397766a4eccac3c123586c70623"
+  },
+  {
+   "name": "TroLase Metallic",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 65,
+   "speed": 80,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/8a085026322546fdae42952a6718dd6e"
+  },
+  {
+   "name": "TroLase Metallic",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 85,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/aae79a9a606f4524af7bede15c1ededd"
+  },
+  {
+   "name": "TroLase Metallic 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 30,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/fcf400a3452a483e975cff7d42fd997a"
+  },
+  {
+   "name": "TroLase Metallic 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 95,
+   "speed": 4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/e5d8874f1188431089b65b387b69bf6d"
+  },
+  {
+   "name": "TroLase Metallic 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 80,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/730e2e3cf4f24e79bd46bad4e5e49cb2"
+  },
+  {
+   "name": "TroLase Metallic 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 100,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/7d86dbc965cc46c78debf023894af1f2"
+  },
+  {
+   "name": "TroLase Metallic 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 80,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/fbb2606a3a0b4e60a5175dd239cbbf08"
+  },
+  {
+   "name": "TroLase Metallic 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 100,
+   "speed": 0.7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/8515dc738cad477fbfa4396075e811b7"
+  },
+  {
+   "name": "TroLase Metallic Plus",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 55,
+   "speed": 80,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c2f772c237a64a7eae504e887013496f"
+  },
+  {
+   "name": "TroLase Metallic Plus",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 75,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c3720dae2f5e4dd2b6428fba56ba5898"
+  },
+  {
+   "name": "TroLase Metallic Plus 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 30,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/37a7e8467c7e4969a33672580119f07a"
+  },
+  {
+   "name": "TroLase Metallic Plus 0.8mm (1/32'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.8,
+   "power": 95,
+   "speed": 4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/28bae4185b3243318caf505436a411e0"
+  },
+  {
+   "name": "TroLase Metallic Plus 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 80,
+   "speed": 1.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/a4ad95878961415d9c2a067e5460a31b"
+  },
+  {
+   "name": "TroLase Metallic Plus 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 100,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c69bf598ab0b4647a8d1014dd3a3f0e2"
+  },
+  {
+   "name": "TroLase Metallic Plus 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 80,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/cac8be7c819f486582242ebf8d7fcda8"
+  },
+  {
+   "name": "TroLase Metallic Plus 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 100,
+   "speed": 0.7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/da7b4217a6fa4147ba2eec3202ba1877"
+  },
+  {
+   "name": "TroLase Reverse 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 1.6,
+   "power": 100,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/bfa2a7f2d1ec480fab6b85201be5a7bf"
+  },
+  {
+   "name": "TroLase Reverse 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 100,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/537a9a76165a4f3b834d33a013bbb618"
+  },
+  {
+   "name": "TroLase Textures 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": 1.6,
+   "power": 100,
+   "speed": 30,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/3a653bc9ef45443591f1418fd22f323d"
+  },
+  {
+   "name": "TroLase Textures 1.6mm (1/16'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 1.6,
+   "power": 80,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/105ab8cda7a64a47a01b96c846c71220"
+  },
+  {
+   "name": "TroLase Textures 3.2mm (1/8'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 3.2,
+   "power": 100,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/b26500af4879422c9c396ffb3e8745e2"
+  },
+  {
+   "name": "TroLase Thins 0.5mm (0.020'')",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 80,
+   "speed": 80,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/5256988e590143388a319a582c90d7d7"
+  },
+  {
+   "name": "TroLase Thins 0.5mm (0.020'')",
+   "cat": "その他",
+   "type": "カット",
+   "th": 0.5,
+   "power": 25,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c34582128ae24506bf7712127819dae7"
+  },
+  {
+   "name": "ガラス",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 100,
+   "speed": 40,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/323f369aea9e80578068fcf5b0cfa7ca"
+  },
+  {
+   "name": "ガラス",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 40,
+   "freq": "500",
+   "result": "○",
+   "memo": "70%グレーにしてティザ生成",
+   "tags": [
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/cf0cfc741fd24b09b12e69ee0e66353e"
+  },
+  {
+   "name": "ガラス",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 70,
+   "freq": "500",
+   "result": "✕",
+   "memo": "濡らした紙を置いて加工",
+   "tags": [
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/ee64ec58c2e94a7d9178a1daa1b016f8"
+  },
+  {
+   "name": "ガラス",
+   "cat": "その他",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 90,
+   "freq": "500",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "glass"
+   ],
+   "url": "https://honey-addition-681.notion.site/acb4d1a1bbe14cacb9d933e009e0aeca"
+  },
+  {
+   "name": "シートベルト端材コーナーのやつ",
+   "cat": "その他",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "10000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "端材"
+   ],
+   "url": "https://honey-addition-681.notion.site/9d81f14f1db2491f98d74655c8c8046b"
+  },
+  {
+   "name": "MarkSolid Spray Metal",
+   "cat": "金属",
+   "type": "彫刻",
+   "th": null,
+   "power": 50,
+   "speed": 20,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "metal"
+   ],
+   "url": "https://honey-addition-681.notion.site/aba85d6692df455b9d739d70ca8e2276"
+  },
+  {
+   "name": "MarkSolid Spray Metal",
+   "cat": "金属",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "metal"
+   ],
+   "url": "https://honey-addition-681.notion.site/ca7c45e71672464099f17a77ad3716c2"
+  },
+  {
+   "name": "Metal Aluminium anodized",
+   "cat": "金属",
+   "type": "彫刻",
+   "th": null,
+   "power": 20,
+   "speed": 7.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "metal"
+   ],
+   "url": "https://honey-addition-681.notion.site/d2d9bf2785324daeba1ab27f95f902d1"
+  },
+  {
+   "name": "Metal Brass coloured",
+   "cat": "金属",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "metal"
+   ],
+   "url": "https://honey-addition-681.notion.site/f5bf9d1a9fa2405382d688b114762112"
+  },
+  {
+   "name": "Metal Stainless Steel",
+   "cat": "金属",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "metal"
+   ],
+   "url": "https://honey-addition-681.notion.site/75dd247bf3b04e8cbb48d5794b023098"
+  },
+  {
+   "name": "RAブラックボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 1.1,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/24144f12edbe4af3bd3aacf87b9d1059"
+  },
+  {
+   "name": "RAブラックボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.54,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/92b9629d4fcc4cad82e2918417a9538a"
+  },
+  {
+   "name": "イラストレーションボード（ミューズ）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 1,
+   "power": 20,
+   "speed": 10,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/3b4f4495d14140ef9bbc5b9b6862262c"
+  },
+  {
+   "name": "イラストレーションボード（ミューズ）",
+   "cat": "紙",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 1.1,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/8afa7c06a7e14ab9a0a16200a75c670a"
+  },
+  {
+   "name": "イラストレーションボード（ミューズ）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 2,
+   "power": 90,
+   "speed": 40,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/61ec60fb24364393ae8d09c0d488276a"
+  },
+  {
+   "name": "イラストレーションボード（ミューズ）",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.54,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/36bf9c8092cc4243a57080e8de88a732"
+  },
+  {
+   "name": "イラストレーションボード（ミューズ）",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 4,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/472a6bb805694111a6d373fa7406dbcb"
+  },
+  {
+   "name": "ケント紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.2,
+   "power": 25,
+   "speed": 2.5,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/02b09dce91b743e68c342e455a734c28"
+  },
+  {
+   "name": "コピー用紙（UVでつかっているもの）",
+   "cat": "紙",
+   "type": "カット",
+   "th": null,
+   "power": 6,
+   "speed": 1,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/5f505942c79442c99c2e1290a1d72935"
+  },
+  {
+   "name": "スチレンボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 2.3,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/304f369aea9e805b906fed4680d9dd60"
+  },
+  {
+   "name": "スチレンボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 1.3,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/304f369aea9e804db21fcd0f9b925b4b"
+  },
+  {
+   "name": "スチレンボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 1.7,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/304f369aea9e807ab54acda881468fa6"
+  },
+  {
+   "name": "スチレンボード",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 70,
+   "speed": 4,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "カットラインで印をつけるときの数値",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/309f369aea9e802e90ded1c7c6b87239"
+  },
+  {
+   "name": "スチレンボード（裏面シール）",
+   "cat": "紙",
+   "type": "",
+   "th": 3,
+   "power": 90,
+   "speed": 1.5,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/317c02c1368340bbba3f18540c263d83"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.6,
+   "power": 90,
+   "speed": 5,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/36085ba02e8741a0b073b458777ae3e5"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.6,
+   "power": 90,
+   "speed": 8,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/23c83e6c412d42d9a52c584da583592e"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "other",
+   "th": 0.6,
+   "power": 90,
+   "speed": 24,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/cf681a8cd4124e568b7d5bee55730eb0"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.6,
+   "power": 90,
+   "speed": 3,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/ff5e6b15e6d6442dadc4a9ddc38247b2"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.6,
+   "power": 40,
+   "speed": 0.5,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e80f28ab1f01cf2cb1c7f"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.6,
+   "power": 40,
+   "speed": 0.4,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e800faffad8bacea6eb87"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.6,
+   "power": 90,
+   "speed": 4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/d29060fdaa474e18a57811fe0e5db614"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.6,
+   "power": 80,
+   "speed": 4,
+   "freq": "",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e803188bbe3fc85e3a716"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.6,
+   "power": 90,
+   "speed": 30,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/8fa6e78ee9a64bf5a8407a262e6f31c2"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.6,
+   "power": 30,
+   "speed": 40,
+   "freq": "",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e80e4baf7dae68d54dc09"
+  },
+  {
+   "name": "スノーマット",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.6,
+   "power": 30,
+   "speed": 70,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e80b8a3d2d63a4518e9c6"
+  },
+  {
+   "name": "ダイソーの厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.5,
+   "power": 70,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/7abe18507176439b91797dc81fda4d06"
+  },
+  {
+   "name": "テトラパック",
+   "cat": "紙",
+   "type": "",
+   "th": 1,
+   "power": 50,
+   "speed": 5,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/da9c08834c6c47ed85a84ef31086eea1"
+  },
+  {
+   "name": "べラム",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.3,
+   "power": 60,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/fe2c877a70404ae9b397e5a9d7e64b3a"
+  },
+  {
+   "name": "べラム",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.3,
+   "power": 90,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/0868a3da87f24622826b58a308c4291e"
+  },
+  {
+   "name": "ラベルシール",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.15,
+   "power": 60,
+   "speed": 5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [],
+   "url": "https://honey-addition-681.notion.site/f7e6c11b9e394a39ac544f981fab00bb"
+  },
+  {
+   "name": "ラミネートフィルム",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.25,
+   "power": 20,
+   "speed": 1,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1ffdcb9dc9aa4d7dbe03d9ba4c926a1c"
+  },
+  {
+   "name": "ラミネートフィルム",
+   "cat": "紙",
+   "type": "カット",
+   "th": null,
+   "power": 20,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/228c4ae5765e4d05b57aaae6df2c36cd"
+  },
+  {
+   "name": "ラミネートフィルム",
+   "cat": "紙",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/117062f6f5cb41ada0b4fae22f8d5432"
+  },
+  {
+   "name": "ラミネートフィルム",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.05,
+   "power": 90,
+   "speed": 70,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/347f369aea9e801daf51c039e0c01b87"
+  },
+  {
+   "name": "ラミネートフィルム",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.05,
+   "power": 20,
+   "speed": 1.3,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/347f369aea9e808fb8dfcc22764f89a7"
+  },
+  {
+   "name": "レザック紙",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.1,
+   "power": 70,
+   "speed": 50,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/c93b35cf1eb34209891ae87fdd5dd3e2"
+  },
+  {
+   "name": "レザック紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.1,
+   "power": 80,
+   "speed": 4,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/a972d1804bf342488afb4aec2f6b88fc"
+  },
+  {
+   "name": "画用紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.1,
+   "power": 20,
+   "speed": 5,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/076184e1908d4823b4e5b12191a3ebad"
+  },
+  {
+   "name": "画用紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.1,
+   "power": 30,
+   "speed": 4,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/18bdcb84403543de9e2d7a1b34292822"
+  },
+  {
+   "name": "画用紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.5,
+   "power": 25,
+   "speed": 5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/11a260755eb6496d9a3b52dfab3aa877"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.3,
+   "power": 25,
+   "speed": 3,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/954d1c850c2745d49086023b1d26d732"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.4,
+   "power": 60,
+   "speed": 2.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1edf369aea9e80dba9d9cee5efbb2036"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.4,
+   "power": 60,
+   "speed": 50,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1edf369aea9e80578710cbf9ca8683ad"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 1,
+   "power": 60,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/3adace879fdb482dbe586d77755fec16"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 1,
+   "power": 60,
+   "speed": 20,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/7d782a9b92df4a5fb204eeaa2102e90e"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 1,
+   "power": 60,
+   "speed": 50,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/f1b85c8176524c458d673487ca5039d6"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "",
+   "th": 1,
+   "power": 40,
+   "speed": 0.8,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/ce36a16275854fc39680980216fa9698"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2.8,
+   "power": 50,
+   "speed": 3,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/1f45ca4da1024ef186a1af5589cd0b07"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 70,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/172f369aea9e802e8468d22dbdafd4c0"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "30000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/172f369aea9e804fa186dd0162e58ebd"
+  },
+  {
+   "name": "厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 70,
+   "speed": 0.5,
+   "freq": "30000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/172f369aea9e80548b66e9aaea9fdb1e"
+  },
+  {
+   "name": "紙テープ",
+   "cat": "紙",
+   "type": "カット",
+   "th": 0.12,
+   "power": 25,
+   "speed": 5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/9d07f012831b41cd876fbf7027960cef"
+  },
+  {
+   "name": "紙テープ",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": 0.12,
+   "power": 60,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/86870db9b0374bd4b838980aaf246df3"
+  },
+  {
+   "name": "段ボール",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2.8,
+   "power": 85,
+   "speed": 3,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "R4.11.19では表面のみしか切れないです。切り落としは下記S1%がbetter",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/cb53e87007a1429ab81e835ff8e8bcad"
+  },
+  {
+   "name": "段ボール",
+   "cat": "紙",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 1,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/b38cdaaef1d64b54be1224b6eceb8d2e"
+  },
+  {
+   "name": "段ボール",
+   "cat": "紙",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.75,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/182f369aea9e800bb172fba502550f51"
+  },
+  {
+   "name": "葉っぱ",
+   "cat": "紙",
+   "type": "",
+   "th": 0.5,
+   "power": 70,
+   "speed": 2.5,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [],
+   "url": "https://honey-addition-681.notion.site/35bf369aea9e80dcaa21c39b73fbf8c5"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "カット",
+   "th": null,
+   "power": 60,
+   "speed": 0.7,
+   "freq": "30000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/26ff6b13912d46e4a42e650bb3b1da67"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 3,
+   "speed": 0.9,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/9150d7a8d4424793ba52bce238e6641d"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 3,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/c23faac94294486886fbd8350f1b052a"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 5,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/92cdfb96ae344a46b80a685220b5f33c"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 30,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/7543b4c979a94f66ad95fc6da277bed5"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 60,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/cb483b0092be467380b767db7700f207"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 60,
+   "speed": 0.6,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/390b4821b073422daafd90ac0f00fa29"
+  },
+  {
+   "name": "和紙（漆加工済み）",
+   "cat": "紙",
+   "type": "彫刻",
+   "th": null,
+   "power": 60,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/452090a915da4274a20914a7af2cd21d"
+  },
+  {
+   "name": "惑星発器バインダー無印厚紙",
+   "cat": "紙",
+   "type": "カット",
+   "th": 2,
+   "power": 85,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "paper"
+   ],
+   "url": "https://honey-addition-681.notion.site/fee7fb168eae44dba92805f8c63d8b1a"
+  },
+  {
+   "name": "ABS樹脂",
+   "cat": "樹脂",
+   "type": "",
+   "th": null,
+   "power": null,
+   "speed": null,
+   "freq": "",
+   "result": "✕",
+   "memo": "加工禁止",
+   "tags": [],
+   "url": "https://honey-addition-681.notion.site/271f369aea9e8034bd19fb0c6daea842"
+  },
+  {
+   "name": "COSボード(PE独立気泡体)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/8fc9b153525f49498bf4779e4ca0bda6"
+  },
+  {
+   "name": "COSボード(PE独立気泡体)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 10,
+   "power": 70,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/6201433c04cf4937be8ca73ed8ccf276"
+  },
+  {
+   "name": "COSボード(PE独立気泡体)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 10,
+   "power": 70,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/94eff32948e74720b31e86735f70185d"
+  },
+  {
+   "name": "COSボード(PE独立気泡体)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/97e58df281e64241a7de0776761fccbe"
+  },
+  {
+   "name": "Delrin 1.65mm (1/16'')",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.65,
+   "power": 80,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/eacc7fed4b394ad1924af80c217cd20b"
+  },
+  {
+   "name": "Delrin 1.65mm (1/16'')",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1.65,
+   "power": 100,
+   "speed": 18,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/4f53bc3eaab143d5a6a40f6b111831f9"
+  },
+  {
+   "name": "EVA(ジョイントマット)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 9.8,
+   "power": 90,
+   "speed": 1,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/34c32cf436f74adc8525d34ebe8a7a83"
+  },
+  {
+   "name": "EVA(ジョイントマット)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 9.8,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/14ea4b40606d4a49952db3e19bf1d064"
+  },
+  {
+   "name": "EVA(ジョイントマット)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 9.8,
+   "power": 90,
+   "speed": 1,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/8d8c0e8c52f64d44b87001f5147ee481"
+  },
+  {
+   "name": "EVA(ジョイントマット)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 9.8,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/65ae378aecb44b789ecc7cc304aeda16"
+  },
+  {
+   "name": "PET",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/074a0cc010444374b57399e71a743140"
+  },
+  {
+   "name": "PET",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1ee2d5e810d84233b82dc12beda8e7ff"
+  },
+  {
+   "name": "PET樹脂版",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 55,
+   "speed": 0.4,
+   "freq": "20000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/20658f9eb8c5452aa42f1c3ad044cb73"
+  },
+  {
+   "name": "PLA",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/e864acdb839f439b9080394f5a6a48be"
+  },
+  {
+   "name": "PLA",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/d85872db378d4bc0bc86d6bb77a30646"
+  },
+  {
+   "name": "Plastics pet0.5",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.5,
+   "power": 80,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/ab4d78ee5b8f4a4aa19d8323999bd3d7"
+  },
+  {
+   "name": "Plastics tromark ADA Applique",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.9,
+   "power": 30,
+   "speed": 7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/f872bdab48ef4b9c8c2c98a38e74d2cb"
+  },
+  {
+   "name": "Plastics tromark ADA Substrate",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.8,
+   "power": 25,
+   "speed": 7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/5933edf92f094ab19f46a8560d9c49bb"
+  },
+  {
+   "name": "Plastics tromark cutting Granites Deluxe",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3.2,
+   "power": 20,
+   "speed": 15,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/30a8004e017b431092800dbe73895250"
+  },
+  {
+   "name": "Plastics tromark cutting Lacquers",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/9d91b60cbde147a5aa538f26a71bfcca"
+  },
+  {
+   "name": "Plastics tromark cutting Mattes",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/cff3c917a60e4992b267aa95eeffa720"
+  },
+  {
+   "name": "Plastics tromark cutting Outdoor Weatherable M",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/73454a5648b4440e98990c612249d19d"
+  },
+  {
+   "name": "Plastics tromark cutting Satins",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/f504984cee494707803d5d310a73965d"
+  },
+  {
+   "name": "Plastics tromark cutting Slickers",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/59c7cf8d2cd34d2294672d7e2cb4abdb"
+  },
+  {
+   "name": "Plastics tromark cutting Ultra-Mattes Front",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/2f786b804f1a4082bba526cd1fb1ba7a"
+  },
+  {
+   "name": "Plastics tromark cutting Ultra-Mattes Reverse",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": null,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1ca40107fc29420892d47cddb1797a0b"
+  },
+  {
+   "name": "Plastics tromark FlexiBrass",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.5,
+   "power": 30,
+   "speed": 7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/08b9e743d75040e4a10dadc902d102de"
+  },
+  {
+   "name": "Plastics tromark FlexiBrass",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 60,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/92ec813770d042238064732bf4fa1a4f"
+  },
+  {
+   "name": "Plastics tromark FlexiColor",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 60,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/85c4b81f8f754742b03c73c2a725d946"
+  },
+  {
+   "name": "Plastics tromark FlexiColor",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.5,
+   "power": 30,
+   "speed": 7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/b29dcda9879d41f395578198efc22aff"
+  },
+  {
+   "name": "Plastics tromark LaserLIGHTS",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.13,
+   "power": 18,
+   "speed": 40,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/e358080783684ef8bf3a5beba7896c0b"
+  },
+  {
+   "name": "Plastics tromark LaserLIGHTS",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.13,
+   "power": 7,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "6",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/6c7c8bb114aa40b287fe306263df3f48"
+  },
+  {
+   "name": "Plastics tromark LASERmag",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.51,
+   "power": 30,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/ae6fd59c7a75452d96504f4cfccce69b"
+  },
+  {
+   "name": "Plastics tromark LASERmag",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.51,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/27250ba259bf4fa6a9c7ec7d3e1bba83"
+  },
+  {
+   "name": "Plastics tromark LaserMark",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.3,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/441389f2eeeb4dad8d2736804e2cb89f"
+  },
+  {
+   "name": "Plastics tromark LaserMark",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1.3,
+   "power": 60,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/54eecf1fb71c40f39361e7ac50c45a2e"
+  },
+  {
+   "name": "Plastics tromark LaserMark Reverse",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1.3,
+   "power": 25,
+   "speed": 40,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/86c6bb850500469a846b96ad271762a8"
+  },
+  {
+   "name": "Plastics tromark LaserMark Reverse",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.3,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1eecebf71d084513b2c567380009a8d6"
+  },
+  {
+   "name": "Plastics tromark LaserMax",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1.6,
+   "power": 60,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/853e4630e07c416c9720072814e2c11e"
+  },
+  {
+   "name": "Plastics tromark LaserMax",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.6,
+   "power": 10,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/b932d3959b2c4cb382f18a199fb9c9ec"
+  },
+  {
+   "name": "Plastics tromark Textures",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 30,
+   "speed": 40,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/5722b8d375e04e5a9721decadc6a9b9c"
+  },
+  {
+   "name": "Plastics tromark Textures 1.6",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.6,
+   "power": 27,
+   "speed": 7,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/7ad726d4275d4f5d9cbe575ffd47fd28"
+  },
+  {
+   "name": "Plastics tromark Textures 3.2",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3.2,
+   "power": 20,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/e70e61467805421d87e52b3e8b1dafef"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.2,
+   "power": 40,
+   "speed": 2,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1b3f369aea9e804fad14ca0fde793c86"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.4,
+   "power": 90,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/22878de7965b44adae0421e74a5f83c4"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.4,
+   "power": 40,
+   "speed": 2,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/c4f25d52e4784815a63d94c98f7255cb"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.4,
+   "power": 90,
+   "speed": 90,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1482ccc9f4ca4323b8f4830dba48491b"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.75,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e80aaba33edd8b16f430e"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.75,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e8077809cfa38b9385cb6"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.2,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/85687b54319b4f1990f121bc031a9d5f"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.4,
+   "power": 90,
+   "speed": 1.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/786fd1a6411d46efb4028eb1198aff60"
+  },
+  {
+   "name": "PP",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.75,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/4ccf46d929364c2fb841eca32ce9951f"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.3,
+   "power": 2,
+   "speed": 70,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [],
+   "url": "https://honey-addition-681.notion.site/f2d87fa45e0546d48c3de934fca6af61"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.4,
+   "power": 70,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/675c956980824b4b89052122ebd8988a"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.4,
+   "power": 70,
+   "speed": 5,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/ec22ea1b813d4a32902c9352767a90f2"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/160f369aea9e801fa323c3a0cd917ccf"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 70,
+   "speed": 7,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/982e617440e74403a8d2129dfb5ee87d"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.4,
+   "power": 70,
+   "speed": 5,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/294c6e06bbe447679b7507a9b2b806f7"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.4,
+   "power": 70,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/4d3ac27d5b0c4a80a760e0c050fab525"
+  },
+  {
+   "name": "PS",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 0.4,
+   "power": 70,
+   "speed": 7,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1b9c47c30c414610bc0af3c22c97b91e"
+  },
+  {
+   "name": "PU",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.7,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/4d204cb15cc447f48329ad6f1948741f"
+  },
+  {
+   "name": "PU",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 0.7,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/395b55ce98b3436f9540399c67bdfd2f"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 50,
+   "speed": 0.7,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/1ac8597238f941a892a480c87861ecb6"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 80,
+   "speed": 0.9,
+   "freq": "20000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/88e39f1651434b21b6fe2bc77e883182"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 45,
+   "speed": 0.7,
+   "freq": "30000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/c752c97c7cad4ba48461bebfa42acbde"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 50,
+   "speed": 0.5,
+   "freq": "20000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "acrylic",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/3111e9704dd04775addeb095bf881289"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/1140cc99acb0422bb51f50506b452f52"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "20000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/c78a32278ef54d5a8e1ee0149a26b2cd"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/569e0005e12b4923a27022854c6628cc"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "30000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/d1433571323e4126bcd0e5ffea92b833"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "30000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "acrylic",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e80fe9ab8d8737828d0da"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/7a37c525e34d4ff1b1b3816c940a4ff4"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/6c3fac004de64069a017b7c5e1188fbe"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.34,
+   "freq": "30000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/223f369aea9e80adbae4f1e67aa4c0a0"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.25,
+   "freq": "30000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e80a3a76fd761106d052e"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 4,
+   "power": 80,
+   "speed": 0.3,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/d766588a87f5401498ad725497146687"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.1,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/6e755152c1ce4c4aab3263771ccb718f"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "",
+   "result": "○",
+   "memo": "2回加工　通常レンズ使用",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/b881e00d11494b0184168407b99ee301"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.15,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/0f4501a929c14c79b01d233430203dfb"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "",
+   "th": 5,
+   "power": 90,
+   "speed": 0.12,
+   "freq": "30000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/335f369aea9e80f2b991e2a8957e8e95"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "20000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "acrylic",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/6381bfd349fe4308a64bc6919030d028"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.15,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/9bb9d0d706ff43fca7a6dd353dd89076"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "30000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "acrylic",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/1b8f369aea9e80ee84f1c34c90e66c94"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "20000",
+   "result": "◎",
+   "memo": "2.5インチ",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/49cfb6d33f0f4a5cb6f2fdf0b12bbe45"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "",
+   "th": null,
+   "power": 80,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/700f65f2c7d6413199f7dd802c094f2f"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.15,
+   "freq": "20000",
+   "result": "◎",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/335f369aea9e803da579d56b783b3447"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.1,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/7fa72900f46c41b69c1d2e7027113c33"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.25,
+   "freq": "",
+   "result": "○",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/0e45e9106e1d41c68534d43634182623"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "",
+   "result": "○",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/606e0f19147c45a8bdc8d5975a7935c2"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 60,
+   "speed": 0.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/b9c6fac48a874e398605082250ddcb51"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.15,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/f3282bab84fc448d83191e2be8b4a4cb"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.3,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/4faa7cfce4d94b0e84875e1925822b92"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "",
+   "result": "○",
+   "memo": "2回加工　通常レンズ使用",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/409e87b4d1a74641826b13a1ef8f1129"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/987f2e0673374570a1474c0e304a86a2"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 0.6,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/9acfb3e4d84f42a8a7a9fa08357a0287"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/a70118c077184da7adfed23d7c552d57"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/2aceba0b97a14535bfc098e622888ebe"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 4,
+   "power": 80,
+   "speed": 0.3,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/c0817c2412524cc1b88da5cbdf1cde6a"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/faaca601dca3447e9fa3685bb8336233"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.27,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/43eee7b990a94253be846c68fce37d01"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/9744ba624f56420ca00d2c801fdfb29d"
+  },
+  {
+   "name": "アクリル",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 5,
+   "power": 80,
+   "speed": 0.25,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/a02abde64cd94d31b947290c09808c5f"
+  },
+  {
+   "name": "アクリル 6mm",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "20000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "acrylic",
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/a4c0e26bc8fc4784bef885ae6c87b06c"
+  },
+  {
+   "name": "アクリル(押し出し)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/ea7e7410ea03450e95b6100e2dbd5b62"
+  },
+  {
+   "name": "アクリル（押し出し）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "20000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/50ce526d59114513bed2db7867c163ab"
+  },
+  {
+   "name": "アクリル（押し出し）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "20000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/17aa8d4d98da4b5fb76f66afe145b5fe"
+  },
+  {
+   "name": "アクリル（二層版）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1.5,
+   "power": 90,
+   "speed": 0.58,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/136f369aea9e80cd808bf512fa628f53"
+  },
+  {
+   "name": "アクリル（二層版）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1.5,
+   "power": 90,
+   "speed": 30,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "acrylic"
+   ],
+   "url": "https://honey-addition-681.notion.site/187f369aea9e8004903dd6342c116fe8"
+  },
+  {
+   "name": "カルプボード(ネオボード黒)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 18,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/34771b970a084315b1cafd3791cf17a9"
+  },
+  {
+   "name": "カルプボード(ネオボード黒)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 18,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/3da5d1e7adfa48e7be06dff71d11bf31"
+  },
+  {
+   "name": "カルプボード(ネオボード黒)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 18,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/dc4d4193b44544e79d9634bb0e3055bb"
+  },
+  {
+   "name": "カルプボード(ネオボード黒)",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 18,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/f744bf8825654f18bab73f7d46a9c15e"
+  },
+  {
+   "name": "メラミン",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2.5,
+   "power": 16,
+   "speed": 3,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/2bc700cafaf341da94328682ecff6987"
+  },
+  {
+   "name": "メラミン",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 2.5,
+   "power": 16,
+   "speed": 3,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/46ec4aecc6a04a11a2261fd57cc8067e"
+  },
+  {
+   "name": "メラミン",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 2.5,
+   "power": 100,
+   "speed": 2.5,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/a7cb1a68fc864cddb5f5a3183a6e8f39"
+  },
+  {
+   "name": "レジン",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 30,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/55e290c59b674901b7be72c4f22f9308"
+  },
+  {
+   "name": "レジン",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 70,
+   "speed": 30,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/6a5c03b6fd614a318b8fbfabf5ca2ce6"
+  },
+  {
+   "name": "レジン",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 30,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/ae55fbb75c94461e9f31cb882a55ae53"
+  },
+  {
+   "name": "レジン",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": null,
+   "power": 70,
+   "speed": 30,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/6f63aab337cc4159b7a5ae7b44bea36d"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/b26e2778b1c0436cb915e9b9c3e87bff"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/004f500bbb7a43bd9a1ffe0497bdf693"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 40,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/a0732b857df64088ab7efb3164f357dc"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 20,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/cd6cf5be9adc4e86b5c82c6023eb48dc"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 30,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/1656da17c5454549bd28fbca47380516"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/59261dfc79fd4c98b6085f7cd8b38b0f"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 30,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/9e4bdedd771c439bac7e5a2c5140147f"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 40,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/55372c476fde40739fbc8ead5d8527fd"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 20,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/e319c5efbc1643e7947fdb6388d2719a"
+  },
+  {
+   "name": "海洋プラスチック(PE PP）",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 1,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics",
+    "recycle"
+   ],
+   "url": "https://honey-addition-681.notion.site/6a1314644d6a44d29e650cddaa845953"
+  },
+  {
+   "name": "黒ウレタンシート",
+   "cat": "樹脂",
+   "type": "カット",
+   "th": 10,
+   "power": 40,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "plastics"
+   ],
+   "url": "https://honey-addition-681.notion.site/ff4baf88e91346c4934470f9945f861e"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": 3,
+   "power": 100,
+   "speed": 100,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/48cd3b4e368e42529cc79fdc4ff07aa1"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/2fb4ca9240c24e21baaa3aec0183f1fd"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/ba01473d6c8e4644a5d9fbfc68990f8b"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 1,
+   "power": 80,
+   "speed": 1,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "default",
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/122206f65366411790fc6cc518a6a853"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 1,
+   "freq": "500",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/10fd49a7736941729259b36a1982eb40"
+  },
+  {
+   "name": "革",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": 1,
+   "power": 90,
+   "speed": 60,
+   "freq": "500",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/a690afc28a194f3aafd9ea47e15f96ce"
+  },
+  {
+   "name": "合皮",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 70,
+   "freq": "500",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/93f6e8f472f843c4833735c33710b679"
+  },
+  {
+   "name": "合皮",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 60,
+   "freq": "500",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/340895267b874db29f8079418bc525c6"
+  },
+  {
+   "name": "合皮",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 40,
+   "freq": "500",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/a84348ce02d840aba35a9fb0fd85e7a5"
+  },
+  {
+   "name": "合皮",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 30,
+   "freq": "500",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/6012418372cd43baac77f12f911388b5"
+  },
+  {
+   "name": "合皮",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 20,
+   "freq": "500",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/d1ff15a8a6d54b5290542ca16442250e"
+  },
+  {
+   "name": "合皮(ポリウレタン含む)",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 1.5,
+   "power": 80,
+   "speed": 1.6,
+   "freq": "500",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/2f6f369aea9e8002b11cfda92fba17a1"
+  },
+  {
+   "name": "本革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 1.5,
+   "power": 80,
+   "speed": 1.5,
+   "freq": "500",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/f45c5d659cfc413e9ce22b90bfc9f783"
+  },
+  {
+   "name": "本革",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": 1.5,
+   "power": 80,
+   "speed": 80,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/740a5f6ad16c4260bdf40b1e5e950e11"
+  },
+  {
+   "name": "本革",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 1.5,
+   "power": 80,
+   "speed": 1.4,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/4ac085776d014c72816c93c7b2e4c1d8"
+  },
+  {
+   "name": "本革",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": 1.5,
+   "power": 80,
+   "speed": 70,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/f2ba2ee86263436b90e819247304aa7f"
+  },
+  {
+   "name": "本革-マステ付き",
+   "cat": "皮革",
+   "type": "カット",
+   "th": 2.5,
+   "power": 80,
+   "speed": 1.5,
+   "freq": "",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/5e94e56987654f5996c7ca57a11ccd7c"
+  },
+  {
+   "name": "本革-マステ付き",
+   "cat": "皮革",
+   "type": "彫刻",
+   "th": 2.5,
+   "power": 70,
+   "speed": 1.2,
+   "freq": "",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "Leather"
+   ],
+   "url": "https://honey-addition-681.notion.site/3b9a396283404a699bc18a7c4b02f7d5"
+  },
+  {
+   "name": "オーガンジー",
+   "cat": "布",
+   "type": "カット",
+   "th": null,
+   "power": 5,
+   "speed": 35,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/04a5d8bdcd93463db645d27d45f35f05"
+  },
+  {
+   "name": "ナイロン",
+   "cat": "布",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 30,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "場所によっては切れない箇所あり",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/318f369aea9e80f9a604f6ceb3126428"
+  },
+  {
+   "name": "フェルト（ウール60レーヨン40）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 8,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/474d056569264d928424f471b0ff567e"
+  },
+  {
+   "name": "フェルト（ポリエステル100）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 10,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/959cfb94f93646c3930a1df44ee49008"
+  },
+  {
+   "name": "フェルト（ポリエステル100）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 8,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/badd6d6e6edd4536a11c7afe9f121559"
+  },
+  {
+   "name": "フェルト（ポリエステル100）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 7,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/af8f856ad2d648b2b796ddb63e5247e3"
+  },
+  {
+   "name": "フェルト（ポリエステル90レーヨン10）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 4,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/848b8dc8701b498298fe9447d5eee116"
+  },
+  {
+   "name": "フェルト（ポリエステル90レーヨン10）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/d5ccf9c5a1d5451c8fc39ba27e6e65b7"
+  },
+  {
+   "name": "フェルト（ポリエステル90レーヨン10）",
+   "cat": "布",
+   "type": "カット",
+   "th": 2,
+   "power": 90,
+   "speed": 7,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/1fc6f40cd3bc4e389197238591fe12f2"
+  },
+  {
+   "name": "フェルト（ポリエステル90レーヨン10）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 2,
+   "power": 60,
+   "speed": 70,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/35988a8dfebb494e8fa21831b9297c5a"
+  },
+  {
+   "name": "ポリエステル65%,綿35%",
+   "cat": "布",
+   "type": "彫刻",
+   "th": null,
+   "power": 30,
+   "speed": 10,
+   "freq": "1000",
+   "result": "△",
+   "memo": "Zオフセット5mm",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/74fcf8dc24b5421d83506c470513b04f"
+  },
+  {
+   "name": "ポリエステル65%,綿35%",
+   "cat": "布",
+   "type": "カット",
+   "th": null,
+   "power": 30,
+   "speed": 20,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "Zオフセット5mm",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/994ee3ff0a6a4e6b85e5139455476839"
+  },
+  {
+   "name": "帆布（綿100%）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 20,
+   "speed": 25,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/7b63c084f43443059529baddd2afc02f"
+  },
+  {
+   "name": "帆布（綿100%）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 20,
+   "speed": 10,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/81a5f13c1bde4d6f96701baec2b6d697"
+  },
+  {
+   "name": "帆布（綿100%）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 30,
+   "speed": 10,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/51b5b89823ff4685847f080bb7e9f98c"
+  },
+  {
+   "name": "帆布（綿100%）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 30,
+   "speed": 20,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/46377a433d0844f085b9e5e239a76c0a"
+  },
+  {
+   "name": "帆布（綿100%）",
+   "cat": "布",
+   "type": "彫刻",
+   "th": 0.5,
+   "power": 30,
+   "speed": 20,
+   "freq": "1000",
+   "result": "○",
+   "memo": "Zオフセット5mm",
+   "tags": [
+    "fabric"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a81cd3462fb44dfaf840a7cabffb139"
+  },
+  {
+   "name": "1×4",
+   "cat": "木材",
+   "type": "カット",
+   "th": 19,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/84946ccac85a404bb6b31e60e197e452"
+  },
+  {
+   "name": "100均のMDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.18,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "2回加工",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/32bf369aea9e803c83e8c7f11737b150"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 1,
+   "power": 30,
+   "speed": 1,
+   "freq": "500",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/7b480d18d1ec4d5db2f128b525160337"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 1,
+   "power": 80,
+   "speed": 1,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/0f5cb6c809d24c4ba20f0965b8e712d0"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 1.5,
+   "power": 90,
+   "speed": 1,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/d90bb4ebe60540be8821506036671a71"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.9,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/3affe7bdb924494ab9be842596d38e14"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 80,
+   "speed": 0.8,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/4a2e10d2d42549e19e845ea8d4fdc6a3"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/ba89f3fe79e44207b6834576043e116f"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/175f369aea9e80b193bedf4470e37cfd"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/175f369aea9e80138972e11c414ef415"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/175f369aea9e807f8a97f3fbc1a40e91"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 80,
+   "speed": 0.6,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1c2b07df720c44f88c25c01b264823e8"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/7898f9b723754c78a51b4f878888ba6c"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/fbe5a913dca9462aa610b76f2b9df668"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/5b4c352b2d15417da01a96ffda67b9d0"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/d46136bb04de4499bcd4a96f4ffcdbeb"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/609c42572e0047588ee451daf42c07a7"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 0.8,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1ed14bcc38dc4a0093c6652beeabb728"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2,
+   "power": 85,
+   "speed": 0.8,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/c2c9488bc52549dfa8aa45a49d1385de"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e8047b509d30e48761649"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a5f369aea9e80c5b1a6c29c7d888da1"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "5000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/c0852b182fa1433cb5fa30892fbc24a1"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.18,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "2.5インチ　1回",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/d16b1d0b2d704af598af4c8943eaf9e6"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/62da2976d8484cd8b1c6510a3470dae9"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/113305d802934991a4a4f5a7619ae77d"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 30,
+   "speed": 1,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/2d53f243ed25449c9550aed824a6789e"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 7,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "5000",
+   "result": "△",
+   "memo": "2回加工、2.5インチ使用",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/cc52b732339542c99980247c2cd1286c"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.55,
+   "freq": "2000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1a7f369aea9e80e29edeca6a866c0e3d"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.33,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/30ff369aea9e80a78632de8432a50251"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.7,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/2a2f369aea9e803ab523c98fb3d4bbd9"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 2.7,
+   "power": 90,
+   "speed": 40,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/2a2f369aea9e80ce9a9eef20b4f6879e"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e807fa075d8650deb713a"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.35,
+   "freq": "2000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e807ea79ef4b2e5bc5924"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "2000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/228f369aea9e802bbaf4f32bbcfc6e11"
+  },
+  {
+   "name": "MDF",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood",
+    "MDF"
+   ],
+   "url": "https://honey-addition-681.notion.site/1f6f369aea9e80d3bfc7d47c6c8f9da8"
+  },
+  {
+   "name": "OSB",
+   "cat": "木材",
+   "type": "カット",
+   "th": 9,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "5000",
+   "result": "△",
+   "memo": "2.5inch",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/b0c058e6f33d4b2cb11056a2f4d940c4"
+  },
+  {
+   "name": "OSB",
+   "cat": "木材",
+   "type": "カット",
+   "th": 9,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "5000",
+   "result": "△",
+   "memo": "2回加工 2.5inch",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/b7f88ed60e0d42fbb684866d17818581"
+  },
+  {
+   "name": "アガチス",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 80,
+   "speed": 50,
+   "freq": "500",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/54897ae704b34665b612a27a46289453"
+  },
+  {
+   "name": "アガチス",
+   "cat": "木材",
+   "type": "カット",
+   "th": null,
+   "power": 95,
+   "speed": 0.5,
+   "freq": "Wood Balsa",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/89dcd17ad93640acabc0bbe5afd9d889"
+  },
+  {
+   "name": "アサダ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "2000",
+   "result": "○",
+   "memo": "2回加工",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/907a88b2f6a1442db1e8387a379b1c45"
+  },
+  {
+   "name": "アルダー",
+   "cat": "木材",
+   "type": "カット",
+   "th": null,
+   "power": 90,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/31b03448228c4917b06e7328cced54c9"
+  },
+  {
+   "name": "ウォールナット",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 100,
+   "speed": 0.6,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/48c2dd92c11b4dd09ff6082d6b9f630a"
+  },
+  {
+   "name": "ウォールナット",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 5,
+   "power": 80,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/24889127981e47deb72f9f5030dbd14d"
+  },
+  {
+   "name": "ウォールナット",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/b58531d2e5564be58c24d71306fb3fdf"
+  },
+  {
+   "name": "ウォールナット",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 25,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/4801514a1ba34f499b5b50e635872861"
+  },
+  {
+   "name": "オーク",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 100,
+   "speed": 0.2,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/514b30b0108a43e8abbca78350dac32e"
+  },
+  {
+   "name": "オーク",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 5,
+   "power": 80,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/bf4bb1f98bf24e61b0981f62edaf21ea"
+  },
+  {
+   "name": "クルミ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 80,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/61caa1e38c1a4ebfb53bf75c8c95f2cb"
+  },
+  {
+   "name": "コルク",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 100,
+   "speed": 100,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/4995bd384a5c46788f0e0c60df2846a5"
+  },
+  {
+   "name": "コルク",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.6,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/d131ba90445a4743b4d7c1464cc9a0c8"
+  },
+  {
+   "name": "コルク",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 500,
+   "freq": "500",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1dcd3ea5078943759804bde6f94643ec"
+  },
+  {
+   "name": "コルク",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.35,
+   "freq": "1000",
+   "result": "△",
+   "memo": "切りきれないけど押せばとれます（でもぼそぼそになる。）",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1825bbaaece34aa5aadf82f222677ffe"
+  },
+  {
+   "name": "コルク",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/237f369aea9e800eb9dfca14b8f3ef0b"
+  },
+  {
+   "name": "シナベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/c2ff98e322864626a80fb79b18482420"
+  },
+  {
+   "name": "シナベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "1000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/342087c7f7654f378f22115a5a4c2f47"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/acd57c7a6bc749d48e3a26c44166a9aa"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 9,
+   "power": 90,
+   "speed": 0.15,
+   "freq": "10000",
+   "result": "○",
+   "memo": "2.5インチ使用、2回加工、2回目のzオフセット-3mm",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/02de5b88a81b44b1b83e1256c7fcf0cc"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/a3ee44469c71466ea098e6ac0101608c"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.65,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/26619fe45e924be780e8b3719f63cb43"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "5000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/3f95d158682d46b19dc0db4a82835718"
+  },
+  {
+   "name": "シナ合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2.5,
+   "power": 90,
+   "speed": 0.23,
+   "freq": "5000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/237f369aea9e80d2b517faa5c3a1e4a5"
+  },
+  {
+   "name": "スギ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "500",
+   "result": "△",
+   "memo": "４回加工",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/84c44697b7fc47cba3a69e7956b42818"
+  },
+  {
+   "name": "スギ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "500",
+   "result": "△",
+   "memo": "3回加工",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/9923e4ec5239432cb9f6f33fa30b0960"
+  },
+  {
+   "name": "スギ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 50,
+   "freq": "500",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c355ba78e02349efa1ace7e5bebf021b"
+  },
+  {
+   "name": "スギ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 60,
+   "freq": "500",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/791e60f397b7439a809a7cf217431654"
+  },
+  {
+   "name": "チェリー",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 100,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/37a115fbd1db494ca053b1cba1ee7390"
+  },
+  {
+   "name": "チェリー",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 5,
+   "power": 70,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/d31743a62d3541ad938e2f11421a0879"
+  },
+  {
+   "name": "ナラ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 25,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/7d7a9c8923764d758bfb1d79b0e40226"
+  },
+  {
+   "name": "ニレ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "○",
+   "memo": "3回加工",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/c7a3c6602fb24ec583c0012b078f40ba"
+  },
+  {
+   "name": "ニレ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/7847f12e2a2f4022a79ba34be915d904"
+  },
+  {
+   "name": "ニレ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 25,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/151c9f3a9d3a4b0a9b63f63c577c16f3"
+  },
+  {
+   "name": "バーチ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 40,
+   "freq": "500",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/f7fb5fae16364ad2920fa74c1b021fcb"
+  },
+  {
+   "name": "パイン",
+   "cat": "木材",
+   "type": "カット",
+   "th": 12,
+   "power": 80,
+   "speed": 1.5,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/69c71fd6ca254f4aaf2a49246bade893"
+  },
+  {
+   "name": "パイン",
+   "cat": "木材",
+   "type": "カット",
+   "th": 30,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/7418604d553f4021b237ecf986c348bb"
+  },
+  {
+   "name": "バルサ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 2,
+   "power": 80,
+   "speed": 1,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/6f3d6b06bd2848a9aa64a1b4bd68d815"
+  },
+  {
+   "name": "ヒノキ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.45,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/05b03d1479854763a6b885931d1a7bc5"
+  },
+  {
+   "name": "ヒノキ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.9,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1bc641bf7fef4753bebb2ce0ed88b5c5"
+  },
+  {
+   "name": "ヒノキ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "2000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/da2446060438464cbaaead629190d09b"
+  },
+  {
+   "name": "ヒノキ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 7.5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/baf7b8b4812d48129a27c2c18d39275a"
+  },
+  {
+   "name": "ひのき（カッティングボード）",
+   "cat": "木材",
+   "type": "カット",
+   "th": 12,
+   "power": 90,
+   "speed": 0.1,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/253f369aea9e8044971adba595d33080"
+  },
+  {
+   "name": "ブナ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.18,
+   "freq": "1000",
+   "result": "○",
+   "memo": "2.5インチ使用",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1b3f369aea9e803ba1a1c5d922355f2d"
+  },
+  {
+   "name": "ブビンガ",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 25,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/2ae5c0d7bd6c457e85ff4b22df062438"
+  },
+  {
+   "name": "ベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5.5,
+   "power": 90,
+   "speed": 0.3,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/c763371be59348e09e15796a71dbfc7a"
+  },
+  {
+   "name": "ベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/acab2b787af047a3872b4605768d502c"
+  },
+  {
+   "name": "ベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 80,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/8061d617a3054115875a07324f30559e"
+  },
+  {
+   "name": "ベニヤ",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.4,
+   "freq": "5000",
+   "result": "△",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/aa89d745e28e4128a55e8aa33a44cb47"
+  },
+  {
+   "name": "ベニヤ(ラワン)",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.2,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/326f369aea9e80f9983fd18c3f554b98"
+  },
+  {
+   "name": "ベニヤ（ラワン）",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 4,
+   "power": 90,
+   "speed": 25,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "もっと早くてもいいです",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1fdf369aea9e80feabadc69780576092"
+  },
+  {
+   "name": "ベニヤ（ラワン）",
+   "cat": "木材",
+   "type": "カット",
+   "th": 4,
+   "power": 90,
+   "speed": 0.25,
+   "freq": "1000",
+   "result": "✕",
+   "memo": "2目回0.5で切ればいけます",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1fdf369aea9e801d9474fe2bd3901b07"
+  },
+  {
+   "name": "メープル",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 100,
+   "speed": 0.8,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/83722abd3025451b94ae0e8dccf30181"
+  },
+  {
+   "name": "メープル",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": 5,
+   "power": 80,
+   "speed": 50,
+   "freq": "",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/c9635303d2c247a9911a10c68d3bd42a"
+  },
+  {
+   "name": "メープル",
+   "cat": "木材",
+   "type": "彫刻",
+   "th": null,
+   "power": 90,
+   "speed": 25,
+   "freq": "500",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood",
+    "default"
+   ],
+   "url": "https://honey-addition-681.notion.site/3d73908f47714c8f84b646f0fa1c7bee"
+  },
+  {
+   "name": "桐",
+   "cat": "木材",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "2000",
+   "result": "✕",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/7b33bb3039d747108f197d0cc745df52"
+  },
+  {
+   "name": "桐",
+   "cat": "木材",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.7,
+   "freq": "2000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/aadb7652f9894d0296c773b3462520f1"
+  },
+  {
+   "name": "合板",
+   "cat": "木材",
+   "type": "カット",
+   "th": 5,
+   "power": 100,
+   "speed": 0.6,
+   "freq": "2000",
+   "result": "",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1d9dea70db3c4ae5929d640986b0d484"
+  },
+  {
+   "name": "杉",
+   "cat": "木材",
+   "type": "カット",
+   "th": 6,
+   "power": 90,
+   "speed": 0.5,
+   "freq": "1000",
+   "result": "○",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/7904241d5ef1470d9f26a3cf6b5e7180"
+  },
+  {
+   "name": "竹(巻きす)",
+   "cat": "木材",
+   "type": "カット",
+   "th": 3,
+   "power": 90,
+   "speed": 0.42,
+   "freq": "1000",
+   "result": "◎",
+   "memo": "",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/30ff369aea9e80dfb881dc16b9baba27"
+  },
+  {
+   "name": "檜",
+   "cat": "木材",
+   "type": "カット",
+   "th": 10,
+   "power": 90,
+   "speed": 0.15,
+   "freq": "1000",
+   "result": "○",
+   "memo": "2.5インチ使用(マステ必須)",
+   "tags": [
+    "wood"
+   ],
+   "url": "https://honey-addition-681.notion.site/1dcf369aea9e80b2a851e2132a2394b8"
+  }
+ ]
+}
