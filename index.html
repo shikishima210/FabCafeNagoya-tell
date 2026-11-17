@@ -267,7 +267,14 @@ details.rules { border-radius: 0; }
 .deco { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
 .deco i { position: absolute; background: var(--main); opacity: 0; animation: decoIn .9s ease forwards; }
 .deco .b { width: 220px; height: 220px; right: -110px; top: 6%; border-radius: 0 0 0 220px; animation-delay: .25s; }
-.deco .d { width: 140px; height: 140px; right: -40px; bottom: -40px; border-radius: 50%; animation-delay: .55s; }
+.deco .d { width: 140px; height: 140px; right: -40px; bottom: -40px; border-radius: 50%; animation: decoIn .9s ease .55s forwards, drift 28s ease-in-out 1.5s infinite alternate; will-change: transform; }
+@keyframes drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(-28px, -16px) scale(1.04); }
+  50%  { transform: translate(-12px, -38px) scale(.97); }
+  75%  { transform: translate(-40px, -22px) scale(1.05); }
+  100% { transform: translate(-18px, -6px) scale(1); }
+}
 @keyframes decoIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
 @media (max-width: 1440px) { .deco { display: none; } }
 .search .wrap { position: relative; z-index: 1; }
@@ -280,7 +287,7 @@ details.rules { border-radius: 0; }
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
 .left { animation: fadeInUp .6s ease both; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .deco i { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .deco i { opacity: 1; animation: none; } }
 
 /* ===== スマホ（幅760px以下） ===== */
 @media (max-width: 760px) {
