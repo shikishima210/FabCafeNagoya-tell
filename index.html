@@ -281,6 +281,57 @@ details.rules { border-radius: 0; }
 .reveal.in { opacity: 1; transform: none; }
 .left { animation: fadeInUp .6s ease both; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .deco i { opacity: 1; } }
+
+/* ===== スマホ（幅760px以下） ===== */
+@media (max-width: 760px) {
+  .wrap, .search .wrap, header .wrap, main .wrap { padding-left: 16px; padding-right: 16px; }
+  header .wrap { flex-wrap: nowrap; gap: 10px; }
+  .brand { min-width: 0; flex-wrap: wrap; gap: 2px 8px; }
+  .brand h1 { font-size: 17px; white-space: nowrap; }
+  .brand small { display: none; }
+  .status { gap: 8px; flex-shrink: 0; }
+  #statusText { display: none; }
+  header.top .btn { padding: 8px 12px; font-size: 13px; }
+  .search .wrap { padding-top: 24px; padding-bottom: 28px; gap: 28px; }
+  .row { grid-template-columns: 1fr; gap: 22px; }
+  .row .f-mat, .row .chips { grid-column: auto; }
+  .lab { overflow: visible; }
+  .lab .hint { white-space: normal; }
+  .seg { width: 100%; }
+  .seg button { flex: 1; min-width: 0; padding: 0 12px; }
+  .chips button { padding: 7px 14px; font-size: 14px; }
+  #rec .box { padding: 18px 16px; }
+  #rec .box h2 { flex-direction: column; gap: 2px; }
+  #rec .tiles { grid-template-columns: minmax(0, 1fr); }
+  #rec .tile { min-width: 0; padding: 12px 14px; }
+  #rec .tile strong { font-size: 42px; white-space: nowrap; }
+  #rec .tile strong small { font-size: 16px; }
+  .tile:hover { transform: none; box-shadow: none; }
+  main .wrap { padding-top: 20px; }
+  .list { padding: 16px 12px; }
+  .list h2 { flex-direction: column; gap: 2px; }
+  /* 表をカードの並びに組み替える */
+  .tbl-wrap { overflow: visible; }
+  table.tbl { min-width: 0; }
+  .tbl thead { display: none; }
+  .tbl tbody tr { display: grid; grid-template-columns: auto 1fr; grid-template-areas: "res name" "nums nums" "memo memo" "lk lk"; gap: 6px 12px; padding: 12px 4px; border-bottom: 1px solid var(--line); }
+  .tbl td { border: 0; padding: 0; }
+  .tbl td.res { grid-area: res; align-self: center; }
+  .tbl td.name { grid-area: name; align-self: center; }
+  .tbl td.n { display: inline-flex; flex-direction: column; align-items: flex-start; text-align: left; font-size: 16px; }
+  .tbl td.n::before { content: attr(data-l); font-family: var(--font-body); font-size: 11px; color: var(--muted); font-weight: 700; }
+  .tbl tbody tr { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "name name name res" "th pw sp fq" "memo memo memo memo" "lk lk lk lk"; }
+  .tbl td.res { justify-self: end; }
+  .tbl td.th { grid-area: th; }
+  .tbl td[data-l="パワー"] { grid-area: pw; }
+  .tbl td[data-l="スピード"] { grid-area: sp; }
+  .tbl td.n:last-of-type, .tbl td[data-l="Hz"], .tbl td[data-l="PPI"] { grid-area: fq; }
+  .tbl td.memo { grid-area: memo; max-width: none; }
+  .tbl td.memo:empty { display: none; }
+  .tbl td.lk { grid-area: lk; }
+  .tbl td.lk:empty { display: none; }
+  .tbl tr:hover td:not(.th) { background: transparent; }
+}
 </style>
 </head>
 <body>
@@ -497,14 +548,14 @@ details.rules { border-radius: 0; }
       const flag = /禁止|加工できない|入力ミス/.test(r.memo);
       const near = t != null && r.th != null && dist(r) <= 0.5;
       return `<tr class="${r.result === "✕" ? "x" : ""}${near ? " near" : ""}">
-        <td>${badge(r)}</td>
+        <td class="res">${badge(r)}</td>
         <td class="name">${esc(r.name)}<small>${esc([r.cat].filter(Boolean).join(" ・ "))}</small></td>
-        <td class="n th">${r.th != null ? `<span class="mk">${r.th}mm</span>` : "—"}</td>
-        <td class="n">${r.power != null ? r.power + "%" : "—"}</td>
-        <td class="n">${r.speed != null ? r.speed + "%" : "—"}</td>
-        <td class="n">${esc(r.freq || "—")}</td>
+        <td class="n th" data-l="厚さ">${r.th != null ? `<span class="mk">${r.th}mm</span>` : "—"}</td>
+        <td class="n" data-l="パワー">${r.power != null ? r.power + "%" : "—"}</td>
+        <td class="n" data-l="スピード">${r.speed != null ? r.speed + "%" : "—"}</td>
+        <td class="n" data-l="${fl}">${esc(r.freq || "—")}</td>
         <td class="memo">${r.memo ? (flag ? `<span class="flag">${esc(r.memo)}</span>` : esc(r.memo)) : ""}</td>
-        <td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Notionで開く</a>` : ""}</td>
+        <td class="lk">${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Notionで開く</a>` : ""}</td>
       </tr>`;
     }).join("");
     $("rec").innerHTML = rec;
