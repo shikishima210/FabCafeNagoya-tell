@@ -286,12 +286,14 @@ details.rules { border-radius: 0; }
 @media (max-width: 760px) {
   .wrap, .search .wrap, header .wrap, main .wrap { padding-left: 16px; padding-right: 16px; }
   header .wrap { flex-wrap: nowrap; gap: 10px; }
-  .brand { min-width: 0; flex-wrap: wrap; gap: 2px 8px; }
-  .brand h1 { font-size: 17px; white-space: nowrap; }
+  .brand { min-width: 0; flex: 1; flex-wrap: nowrap; gap: 8px; }
+  .brand h1 { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  header.top .brand .beam { flex-shrink: 0; width: 10px; height: 10px; }
+  .status > span:first-child { display: none; }
   .brand small { display: none; }
   .status { gap: 8px; flex-shrink: 0; }
-  #statusText { display: none; }
-  header.top .btn { padding: 8px 12px; font-size: 13px; }
+  header.top .btn { padding: 8px 10px; font-size: 12px; }
+  header.top .btn::after { display: none; }
   .search .wrap { padding-top: 24px; padding-bottom: 28px; gap: 28px; }
   .row { grid-template-columns: 1fr; gap: 22px; }
   .row .f-mat, .row .chips { grid-column: auto; }
