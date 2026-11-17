@@ -10,14 +10,14 @@ Trotec Speedy 360（CO2 60W）用。素材と厚さを入れると、過去の�
 
 ## 公開の手順（初回だけ）
 
-1. GitHub で新しいリポジトリを作る（このリポジトリは `FabCafeNagoya-tell`）。公開（Public）にする。
+1. GitHub で新しいリポジトリを作る（このリポジトリは `Fabrication-tell`）。公開（Public）にする。
 2. このフォルダの中身をすべてアップロードする
    - `index.html` / `README.md` / `scripts/fetch-notion.mjs` / `.github/workflows/update-records.yml`
    - ブラウザでアップロードする場合、`.github` フォルダは隠しフォルダなので、Finder で ⌘⇧. を押して表示してからドラッグする
 3. **Actions** タブ →「記録を更新」→ **Run workflow** を押す
    → 1〜2 分で `data/records.json` ができる（緑のチェックが付けば成功）
 4. **Settings → Pages** → Source を「Deploy from a branch」、Branch を `main` / `/(root)` にして Save
-5. 数分後、`https://<ユーザー名>.github.io/<リポジトリ名>/` で開けるようになる。このURLを共有する
+5. 数分後、`https://shikishima210.github.io/Fabrication-tell/` で開けるようになる。このURLを共有する
 
 ## 運用
 
