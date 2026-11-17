@@ -1,4 +1,4 @@
-# レーザーデータベースサーチ
+# LDS.758 Laser Database Search
 
 Trotec Speedy 360（CO2 60W）用。素材と厚さを入れると、過去の加工記録（前例）とおすすめの開始値が見られる Web アプリです。
 

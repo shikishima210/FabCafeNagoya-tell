@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>レーザーデータベースサーチ</title>
+<title>LDS.758 Laser Database Search</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -334,12 +334,16 @@ details.rules { border-radius: 0; }
   .tbl td.lk:empty { display: none; }
   .tbl tr:hover td:not(.th) { background: transparent; }
 }
+
+.brand h1 .code { font-family: var(--font-num); font-weight: 600; letter-spacing: .02em; }
+.brand h1 .full { font-weight: 700; letter-spacing: .01em; }
+@media (max-width: 760px) { .brand h1 .full { font-size: 13px; } }
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <div class="brand"><span class="beam" aria-hidden="true"></span><h1>レーザーデータベースサーチ</h1><small>Trotec Speedy 360（CO2 60W）</small></div>
+    <div class="brand"><span class="beam" aria-hidden="true"></span><h1><span class="code">LDS.758</span> <span class="full">Laser Database Search</span></h1><small>Trotec Speedy 360（CO2 60W）</small></div>
     <div class="status"><span><span class="dot" id="dot"></span><span id="statusText">読み込み中…</span></span><button class="btn" id="reload" type="button">読み込み直す</button></div>
   </div>
 </header>
