@@ -344,6 +344,21 @@ details.rules { border-radius: 0; }
 
 .brand h1 .code { font-family: var(--font-num); font-weight: 600; letter-spacing: .02em; }
 .brand h1 .full { font-size: .6em; font-weight: 700; color: var(--muted); letter-spacing: .02em; margin-left: .3em; }
+
+/* 自動更新が止まっている時の帯 */
+.sysbar { background: var(--bad-bg); border-bottom: 1px solid var(--bad); padding: 10px 24px; font-size: 14px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.sysbar[hidden] { display: none; }
+/* おすすめの開始値：止める時・厚さが違う時 */
+.alert.inbox { margin-bottom: 14px; border-radius: 0; }
+.tile.far strong { color: var(--muted); }
+.blocked .stopmsg { margin: 0 0 10px; font-size: 20px; font-weight: 900; color: var(--bad); }
+.blocked .why { margin: 0 0 6px; padding-left: 1.2em; font-size: 15px; font-weight: 700; }
+.tbl td.memo .flag.bad { color: var(--bad); }
+/* ヘッダーの「読み込み直す」は控えめに */
+header.top .btn { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 0; padding: 4px 10px; font-weight: 500; font-size: 12px; }
+header.top .btn::after { content: none; }
+header.top .btn:hover { background: var(--surface-2); color: var(--ink); border-color: var(--ink); }
+@media (max-width: 760px) { .sysbar { padding: 10px 16px; justify-content: flex-start; } }
 </style>
 </head>
 <body>
@@ -353,6 +368,7 @@ details.rules { border-radius: 0; }
     <div class="status"><span><span class="dot" id="dot"></span><span id="statusText">読み込み中…</span></span><button class="btn" id="reload" type="button">読み込み直す</button></div>
   </div>
 </header>
+<div class="sysbar" id="sysbar" role="alert" hidden></div>
 
 <section class="search">
   <div class="deco" aria-hidden="true"><i class="b"></i><i class="d"></i></div>
@@ -407,6 +423,7 @@ details.rules { border-radius: 0; }
 (() => {
   "use strict";
   const CHIPS = ["アクリル", "MDF", "シナ合板", "ベニヤ", "ヒノキ", "ウォールナット", "革", "スタンプ用ゴム", "厚紙", "段ボール", "フェルト", "ガラス"];
+  const REPO_RUNS = "https://api.github.com/repos/shikishima210/Fabrication-tell/actions/workflows/update-records.yml/runs?per_page=10";
 
   const state = { th: 3, mode: "カット", fcn: [], loaded: false, loading: false, showAll: false };
   const $ = (id) => document.getElementById(id);
@@ -416,23 +433,45 @@ details.rules { border-radius: 0; }
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const num = (v) => { const n = typeof v === "number" ? v : parseFloat(v); return Number.isFinite(n) ? n : null; };
 
+  // ---- 言い換え辞書 ----
   const SYN = [
     ["クルミ", "くるみ", "胡桃", "ウォールナット", "ウォルナット", "walnut"],
-    ["ヒノキ", "ひのき", "檜", "桧"], ["スギ", "杉"],
-    ["シナ", "シナベニヤ", "シナ合板", "シナベニア"], ["ベニヤ", "合板", "ラワン"],
-    ["アクリル", "plexiglas", "プレキシ"], ["革", "皮", "レザー", "本革", "合皮", "牛革"],
-    ["ゴム", "ラバー", "rubber"], ["段ボール", "ダンボール"], ["ガラス", "glass"],
-    ["キリ", "桐"], ["ナラ", "オーク"], ["メープル", "楓", "かえで"], ["竹", "バンブー"],
-    ["スチレンボード", "スチボ"], ["イラストボード", "イラストレーションボード"], ["PET", "ペット"],
+    ["ヒノキ", "ひのき", "檜", "桧", "hinoki", "cypress"], ["スギ", "杉", "cedar"],
+    ["シナ", "シナベニヤ", "シナ合板", "シナベニア"], ["ベニヤ", "ベニア", "合板", "ラワン", "plywood"],
+    ["アクリル", "アクリル板", "acrylic", "plexiglas", "プレキシ"], ["革", "皮", "皮革", "レザー", "本革", "合皮", "牛革", "leather"],
+    ["ゴム", "ラバー", "rubber"], ["段ボール", "ダンボール", "cardboard"], ["ガラス", "glass"],
+    ["キリ", "桐"], ["ナラ", "オーク", "oak"], ["メープル", "楓", "かえで", "maple"], ["竹", "バンブー", "bamboo"],
+    ["スチレンボード", "スチボ"], ["イラストボード", "イラストレーションボード"],
+    ["PET", "ペット", "ポリエチレンテレフタレート"], ["PLA", "ポリ乳酸"], ["PP", "ポリプロピレン"], ["PS", "ポリスチレン"], ["PU", "ポリウレタン", "ウレタン"],
     ["石", "stone", "御影石", "大理石", "marble", "granite"],
-  ];
+    ["フェルト", "felt"], ["紙", "paper", "ペーパー"], ["コルク", "cork"], ["MDF", "エムディーエフ"],
+    ["木", "木材", "wood"], ["布", "生地", "fabric", "cloth"],
+  ].map((g) => g.map(norm));
+  const isAscii = (s) => /^[\x00-\x7f]+$/.test(s);
+  // 入力と完全に同じ／入力が言い換え語の書きかけ／入力に言い換え語が含まれる（短い語は除く）時だけ言い換えを広げる。
+  // 「シナ合板」の中の「合板」のように、もっと長い言い換え語の一部でしかない時は広げない。
   function terms(q) {
     const n = norm(q); if (!n) return [];
     const set = new Set([n]);
-    for (const g of SYN) { const ng = g.map(norm); if (ng.some((x) => x && (n.includes(x) || x.includes(n)))) ng.forEach((x) => set.add(x)); }
+    const found = [];
+    for (const g of SYN) {
+      let m = null;
+      for (const x of g) {
+        if (!x) continue;
+        if (x === n) { m = { x, exact: true }; break; }
+        if (x.startsWith(n) && n.length >= (isAscii(n) ? 3 : 2)) m = m || { x: n, exact: false };
+        else if (n.includes(x) && x.length >= (isAscii(x) ? 3 : 2) && (!m || x.length > m.x.length)) m = { x, exact: false };
+      }
+      if (m) found.push({ g, ...m });
+    }
+    for (const f of found) {
+      const covered = !f.exact && found.some((o) => o !== f && o.x.length > f.x.length && o.x.includes(f.x));
+      if (!covered) f.g.forEach((x) => set.add(x));
+    }
     return [...set];
   }
 
+  // ---- 加工できない素材 ----
   const NG = [
     { k: ["塩ビ", "塩化ビニル", "pvc", "ビニール", "クリアファイル", "ビニル"], t: "塩ビ（PVC）は加工できません", d: "燃やすと有害ガスが出ます。クリアファイルやカッティングシートも塩ビが多いので素材表示を確認してください。" },
     { k: ["鏡", "ミラー", "mirror"], t: "鏡・ミラーは加工できません", d: "レーザーを反射して機械を傷めるおそれがあります。" },
@@ -440,51 +479,101 @@ details.rules { border-radius: 0; }
     { k: ["シリコン", "silicone"], t: "シリコンは加工できない素材です", d: "店舗の操作ガイドで加工不可になっています。" },
     { k: ["テフロン", "ptfe", "フッ素"], t: "テフロン（PTFE）は加工できません", d: "有害なガスが出る素材です。" },
     { k: ["abs"], t: "ABS樹脂は加工禁止です", d: "店舗の記録で加工禁止になっています。" },
-    { k: ["ウール", "羊毛"], t: "ウールフェルトは加工できません", d: "ポリエステルのフェルトなら前例があります。" },
+    { k: ["ウール", "羊毛", "wool"], t: "ウールフェルトは加工できません", d: "ポリエステルのフェルトなら前例があります。" },
     { k: ["炭素繊維", "カーボン", "cfrp"], t: "炭素繊維は加工できません", d: "加工非推奨の素材です。" },
     { k: ["難燃"], t: "「難燃」と書かれた素材は要注意", d: "臭素を含むことがあります。素材の詳細がわかるまで加工しないでください。" },
     { k: ["エンプラ", "ポリカ"], t: "エンプラ・ポリカーボネートは要相談", d: "店舗ガイドではエンプラは加工できない素材です。" },
-  ];
-  function warnings(q, t, mode) {
+  ].map((w) => ({ ...w, nk: w.k.map(norm) }));
+  const ngOf = (s) => { const n = norm(s); return NG.find((w) => w.nk.some((k) => n.includes(k))) || null; };
+  // 組成によって加工できるかが変わる素材（入力に組成が書かれていなければ注意を出す）
+  const COMPO = [
+    { k: ["フェルト", "felt", "布", "生地", "fabric", "cloth"], ok: ["ポリエステル", "polyester", "綿", "コットン", "cotton", "ナイロン", "nylon"], t: "布・フェルトは組成を確認してください", d: "ウールを含むものや塩ビコーティングされたものは加工できません。素材表示（ポリエステル100% など）を確かめてから使ってください。" },
+  ].map((c) => ({ ...c, nk: c.k.map(norm), nok: c.ok.map(norm) }));
+
+  function warnings(q, t, tRaw, mode) {
     const n = norm(q), out = [];
-    for (const w of NG) if (w.k.some((k) => n.includes(norm(k)))) out.push({ cls: "bad", t: w.t, d: w.d });
+    for (const w of NG) if (w.nk.some((k) => n.includes(k))) out.push({ cls: "bad", t: w.t, d: w.d, stop: true });
+    if (!out.length) for (const c of COMPO) if (c.nk.some((k) => n.includes(k)) && !c.nok.some((k) => n.includes(k))) out.push({ cls: "warn", t: c.t, d: c.d });
+    if (tRaw != null && tRaw <= 0) out.push({ cls: "warn", t: "厚さは0より大きい数で入力してください", d: "今は厚さを指定せずに探しています。" });
     if (t != null) {
-      if (t > 210) out.push({ cls: "bad", t: "高さ210mmを超えると機械に入りません", d: "加工テーブル込みで最大210mmです。" });
+      if (t > 210) out.push({ cls: "bad", t: "高さ210mmを超えると機械に入りません", d: "加工テーブル込みで最大210mmです。", stop: true });
       else if (t > 10 && mode === "カット") out.push({ cls: "warn", t: `${t}mmのカットはかなり厚めです`, d: "彫刻なら問題ありません。カットは2.5インチレンズ＋とても遅い速度の前例が少しあるだけです。スタッフに相談してください。" });
       else if (t > 5 && mode === "カット") out.push({ cls: "warn", t: `${t}mmは通常のカット厚（5mm程度）を超えます`, d: "下の一覧で、2.5インチレンズや2回加工の前例を確認してください。" });
     }
     return out;
   }
 
-  // ---- data ----
-  function payloadOf(res) {
-    let p = res && res.payload;
-    if (typeof p === "string") { try { p = JSON.parse(p); } catch (_) { p = null; } }
-    if ((!p || !p.results) && res && Array.isArray(res.content)) {
-      const tb = res.content.find((c) => c.type === "text");
-      if (tb) { try { p = JSON.parse(tb.text); } catch (_) {} }
-    }
-    return p || {};
+  // ---- データの読み込みと確認 ----
+  // 書き出し側と同じ範囲チェックを画面側でもう一度かける（古い JSON や手で直した JSON でも壊れた値を使わない）
+  function checkRecord(r) {
+    const issues = Array.isArray(r.issues) ? r.issues.slice() : [];
+    const chk = (v, label, max) => { const n = num(v); if (v == null || v === "") return null; if (n == null || !(n > 0 && n <= max)) { issues.push(`${label}「${v}」は範囲外です`); return null; } return n; };
+    const th = chk(r.th, "厚さ", 210), power = chk(r.power, "パワー", 100), speed = chk(r.speed, "スピード", 100);
+    let freq = r.freq != null ? String(r.freq).trim() : "";
+    if (freq && !/^\d+(\.\d+)?$/.test(freq)) { issues.push(`PPI/Hz「${freq}」は数値として読めません`); freq = ""; }
+    const type = r.type === "彫刻" ? "彫刻" : r.type === "カット" ? "カット" : "不明";
+    const tags = Array.isArray(r.tags) ? r.tags.map((x) => String(x)) : [];
+    const ng = ngOf(r.name) || (/禁止|加工できない|加工不可/.test(r.memo || "") ? { t: "記録で加工禁止になっています" } : null);
+    return { name: r.name || "", cat: r.cat || "", th, type, typeRaw: r.type || "", power, speed, freq, memo: r.memo || "", result: r.result || "", url: r.url || "", tags, issues, ng,
+      hay: norm(r.name), keys: new Set([norm(r.cat), ...tags.map(norm)].filter(Boolean)) };
   }
+  const isDefault = (r) => Array.isArray(r.tags) && r.tags.some((x) => String(x).normalize("NFKC").trim().toLowerCase() === "default");
+
   async function load() {
     if (state.loading) return;
     state.loading = true;
     setStatus("", "記録を読み込み中…");
     $("rec").innerHTML = '<div class="skel"></div>'; $("content").innerHTML = '<div class="skel" style="height:280px"></div>';
+    let data;
     try {
       const res = await fetch(`data/records.json?t=${Date.now()}`, { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
-      const data = await res.json();
-      state.fcn = (data.records || []).map((r) => ({ src: "fcn", name: r.name || "", cat: r.cat || "", th: num(r.th), type: r.type === "彫刻" || r.type === "その他" ? "彫刻" : "カット", power: num(r.power), speed: num(r.speed), freq: r.freq != null ? String(r.freq) : "", memo: r.memo || "", result: r.result || "", url: r.url || "" }));
-      state.loaded = true;
-      const upd = data.updatedAt ? new Date(data.updatedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
-      setStatus("live", `記録 ${state.fcn.length}件${upd ? ` ・ ${upd} 更新` : ""}`);
-      $("names").innerHTML = [...new Set(state.fcn.map((r) => r.name))].filter(Boolean).sort((a, b) => a.localeCompare(b, "ja")).map((n) => `<option value="${esc(n)}"></option>`).join("");
-      render();
+      data = await res.json();
     } catch (err) {
+      state.loading = false; state.loaded = false;
       setStatus("err", "記録を読み込めませんでした");
       gate("記録を読み込めませんでした", "通信を確認して、読み込み直してください。", true);
-    } finally { state.loading = false; }
+      return;
+    }
+    state.loading = false;
+    if (!data || !Array.isArray(data.records)) {
+      state.loaded = false;
+      setStatus("err", "記録の形式が正しくありません");
+      gate("記録の形式が正しくありません", "書き出しに失敗している可能性があります。スタッフに伝えてください。", true);
+      return;
+    }
+    // メーカー参考値（default タグ）は画面側でも念のため除外する
+    state.fcn = data.records.filter((r) => r && !isDefault(r)).map(checkRecord);
+    if (!state.fcn.length) {
+      state.loaded = false;
+      setStatus("err", "記録が0件です");
+      gate("記録が1件もありません", "書き出しに失敗している可能性があります。スタッフに伝えてください。", true);
+      return;
+    }
+    state.loaded = true;
+    const upd = data.updatedAt ? new Date(data.updatedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+    setStatus("live", `記録 ${state.fcn.length}件${upd ? ` ・ ${upd} 更新` : ""}`);
+    $("names").innerHTML = [...new Set(state.fcn.map((r) => r.name))].filter(Boolean).sort((a, b) => a.localeCompare(b, "ja")).map((n) => `<option value="${esc(n)}"></option>`).join("");
+    render();
+    checkAuto();
+  }
+  // 自動更新（GitHub Actions）が止まっていないかを確かめる。取れなければ何も出さない
+  async function checkAuto() {
+    try {
+      const res = await fetch(REPO_RUNS, { headers: { Accept: "application/vnd.github+json" } });
+      if (!res.ok) return;
+      const runs = ((await res.json()).workflow_runs || []).filter((r) => r.status === "completed");
+      if (!runs.length) return;
+      const fmt = (s) => new Date(s).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+      const okRun = runs.find((r) => r.conclusion === "success");
+      const latest = runs[0];
+      const hours = okRun ? (Date.now() - new Date(okRun.updated_at).getTime()) / 36e5 : Infinity;
+      if (okRun) $("statusText").title = `自動確認 ${fmt(okRun.updated_at)}`;
+      if (latest.conclusion !== "success" || hours > 26) {
+        $("sysbar").innerHTML = `<b>記録の自動更新が止まっています</b><span>${okRun ? `最後に成功したのは ${fmt(okRun.updated_at)} です。` : ""}新しい記録が反映されていない可能性があります。スタッフに伝えてください。</span>`;
+        $("sysbar").hidden = false;
+      }
+    } catch (_) { /* 通信できない時は表示しない */ }
   }
   function setStatus(kind, text) { $("dot").className = "dot" + (kind ? " " + kind : ""); $("statusText").textContent = text; }
   function gate(title, body, btn) {
@@ -493,85 +582,125 @@ details.rules { border-radius: 0; }
     const b = $("gateBtn"); if (b) b.addEventListener("click", () => load());
   }
 
-  // ---- search ----
+  // ---- 検索 ----
   const RANK = { "◎": 3, "○": 2, "△": 1, "✕": 0 };
-  const COMMON_TH = [0.5, 1, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 15, 18, 20, 25, 30];
-  function syncThick() { return num($("t").value); }
+  const matchAll = (ts) => ts.length ? state.fcn.filter((r) => ts.some((x) => r.hay.includes(x) || r.keys.has(x))) : [];
+  // 素材欄に「アクリル3mm」「MDF 2.5」のように厚さが入っていたら、厚さとして取り出す
+  function splitQuery(raw) {
+    const q = raw.trim();
+    const m = q.normalize("NFKC").match(/^(.*?\D)\s*(\d+(?:\.\d+)?)\s*(mm|ミリ|t)?$/i);
+    if (!m || !m[1].trim()) return { q, th: null };
+    const rest = m[1].trim();
+    // 「1×4」のような素材名そのもの・掛け算の表記は厚さとみなさない
+    if (/[×xX*＊]$/.test(rest) || (!m[3] && state.fcn.some((r) => r.hay === norm(q)))) return { q, th: null };
+    const full = matchAll(terms(q)).length, part = matchAll(terms(rest)).length;
+    return part > 0 && part >= full ? { q: rest, th: Number(m[2]), cut: q.normalize("NFKC").slice(m[1].length).trim() } : { q, th: null };
+  }
   function search() {
-    const q = $("q").value.trim(), ts = terms(q);
-    const hits = ts.length ? state.fcn.filter((r) => { const n = norm(r.name); return ts.some((x) => n.includes(x)); }) : [];
-    const t = syncThick(hits);
+    const sq = splitQuery($("q").value);
+    const q = sq.q, ts = terms(q);
+    const hits = matchAll(ts);
+    const tRaw = num($("t").value);
+    const t = tRaw != null && tRaw > 0 ? tRaw : null;
     const rank = (r) => r.result in RANK ? RANK[r.result] : 1.2;
     const dist = (r) => t != null ? (r.th != null ? Math.abs(r.th - t) : 6) : 0;
     const sortFn = (a, b) => (Math.round(dist(a) * 10) - Math.round(dist(b) * 10)) || (rank(b) - rank(a));
-    const cut = hits.filter((r) => r.type === "カット").sort(sortFn);
-    const eng = hits.filter((r) => r.type === "彫刻").sort(sortFn);
-    return { q, t, cut, eng, dist };
+    // 加工種類が空・不明の記録はどちらの一覧にも出す（おすすめ値には使わない）
+    const cut = hits.filter((r) => r.type !== "彫刻").sort(sortFn);
+    const eng = hits.filter((r) => r.type !== "カット").sort(sortFn);
+    return { q, raw: $("q").value.trim(), sq, t, tRaw, cut, eng, dist };
   }
-  const nice = (v) => v >= 10 ? Math.round(v) : v >= 1 ? Math.round(v * 10) / 10 : Math.round(v * 100) / 100;
+  const usable = (r) => r.power != null && r.speed != null && !r.issues.length && !r.ng && r.type !== "不明";
   function pickBase(list) {
-    const ok = (r) => r.power != null && r.speed != null;
-    return list.find((r) => ok(r) && (r.result === "◎" || r.result === "○")) || list.find((r) => ok(r) && r.result !== "✕") || null;
+    // 結果が「記録なし」「✕」の前例は使わない。厚さの近い順に、◎○ → △ の順で選ぶ
+    return list.find((r) => usable(r) && (r.result === "◎" || r.result === "○")) || list.find((r) => usable(r) && r.result === "△") || null;
   }
 
-  // ---- render ----
+  // ---- 表示 ----
   function badge(r) {
     if (r.result in RANK) return `<span class="badge r${RANK[r.result]}">${esc(r.result)}</span>`;
     return `<span class="badge none">記録なし</span>`;
   }
   let lastRecKey = "", listSeen = false;
   function render() {
-    const { q, t, cut, eng, dist } = search();
+    const { q, raw, sq, t, tRaw, cut, eng, dist } = search();
     $("cCut").textContent = state.loaded && q ? cut.length : "";
     $("cEng").textContent = state.loaded && q ? eng.length : "";
-    document.querySelectorAll("#chips button").forEach((b) => b.setAttribute("aria-current", String(norm(b.dataset.q) === norm(q))));
-    const al = warnings(q, t, state.mode);
+    document.querySelectorAll("#chips button").forEach((b) => b.setAttribute("aria-current", String(norm(b.dataset.q) === norm(raw))));
+    const al = warnings(raw, t, tRaw, state.mode);
+    if (sq.th != null) al.push(tRaw === sq.th
+      ? { cls: "info", t: `素材欄の「${sq.cut}」を厚さとして使っています`, d: "厚さは「2 厚さを入力」に入れると確実です。" }
+      : { cls: "warn", t: `素材欄の「${sq.cut}」と厚さ欄の値が違います`, d: `厚さ欄の${tRaw != null ? `「${tRaw}mm」` : "値（空欄＝指定なし）"}で探しています。` });
     const list = state.mode === "カット" ? cut : eng;
-    if (state.loaded && q && cut.length + eng.length === 0) al.push({ cls: "info", t: "前例が見つかりません", d: "別の呼び方（ウォールナット↔クルミ、シナベニヤ↔シナ合板 など）や、カテゴリ名で探してみてください。" });
+    if (state.loaded && q && cut.length + eng.length === 0) al.push({ cls: "info", t: "前例が見つかりません", d: "別の呼び方（ウォールナット↔クルミ、acrylic↔アクリル など）や、カテゴリ名（木材・樹脂・紙・布・皮革・ゴム）で探してみてください。" });
     $("alerts").innerHTML = al.map((a) => `<div class="alert ${a.cls}"><b>${esc(a.t)}</b><span>${esc(a.d)}</span></div>`).join("");
     if (!state.loaded) return;
     const clearList = () => { $("content").innerHTML = ""; $("toList").hidden = true; };
-    if (!q) { clearList(); $("rec").innerHTML = `<div class="box empty">素材を入力するか、上の「よく使う素材」から選んでください。</div>`; return; }
-    if (!list.length) { clearList(); $("rec").innerHTML = `<div class="box empty">${state.mode}の前例はありません。${(state.mode === "カット" ? eng : cut).length ? `${state.mode === "カット" ? "彫刻" : "カット"}の前例は${(state.mode === "カット" ? eng : cut).length}件あります。` : ""}</div>`; return; }
+    if (!q) { clearList(); $("rec").innerHTML = `<div class="box empty">素材を入力するか、上の「よく使う素材」から選んでください。</div>`; lastRecKey = ""; return; }
+    if (!list.length) { clearList(); $("rec").innerHTML = `<div class="box empty">${state.mode}の前例はありません。${(state.mode === "カット" ? eng : cut).length ? `${state.mode === "カット" ? "彫刻" : "カット"}の前例は${(state.mode === "カット" ? eng : cut).length}件あります。` : ""}</div>`; lastRecKey = ""; return; }
 
     const fl = state.mode === "カット" ? "Hz" : "PPI";
-    const base = pickBase(list);
-    let rec = "";
-    if (base) {
-      const far = t != null && base.th != null && Math.abs(base.th - t) > 0.6;
+    const stops = al.filter((a) => a.stop);
+    const base = stops.length ? null : pickBase(list);
+    const note = al.find((a) => a.cls === "warn" && !/厚さ|mm/.test(a.t));
+    let rec;
+    if (stops.length) {
+      rec = `<div class="rec"><div class="box start blocked">
+          <h2><span>おすすめの開始値（${state.mode}）</span><span></span></h2>
+          <p class="stopmsg">この条件ではおすすめ値を出しません</p>
+          <ul class="why">${stops.map((a) => `<li>${esc(a.t)}</li>`).join("")}</ul>
+          <div class="basis">加工できるか分からない時は、スタッフに相談してください。</div>
+        </div></div>`;
+    } else if (base) {
+      const far = t != null && (base.th == null || Math.abs(base.th - t) > 0.6);
+      const farMsg = !far ? "" : base.th == null
+        ? `厚さの記録がない前例です。${t}mm でそのまま使えるとは限りません。`
+        : `前例は ${base.th}mm、入力は ${t}mm です。この数値はそのまま使えません。`;
       const tile = (label, val, unit) => val == null || val === "" ? `<div class="tile" aria-disabled="true"><div class="top"><em>${label}</em></div><strong>—</strong></div>`
-        : `<button type="button" class="tile" data-copy="${esc(val)}" aria-label="${label} ${esc(val)}${unit} をコピー"><div class="top"><em>${label}</em><span class="cp">クリックでコピー</span></div><strong>${esc(val)}${unit ? `<small>${unit}</small>` : ""}</strong></button>`;
+        : `<button type="button" class="tile${far ? " far" : ""}" data-copy="${esc(val)}" aria-label="${label} ${esc(val)}${unit} をコピー${far ? "（厚さが違う前例の参考値）" : ""}"><div class="top"><em>${label}${far ? "（参考）" : ""}</em><span class="cp">クリックでコピー</span></div><strong>${esc(val)}${unit ? `<small>${unit}</small>` : ""}</strong></button>`;
       rec = `<div class="rec">
         <div class="box start">
           <h2><span>おすすめの開始値（${state.mode}）</span><span>数値を押すとコピーできます</span></h2>
+          ${far ? `<div class="alert warn inbox"><b>厚さが違う前例です</b><span>${esc(farMsg)}テスト加工で切れ具合を見て、スピードで調整してください。</span></div>` : ""}
+          ${note ? `<div class="alert warn inbox"><b>${esc(note.t)}</b><span>${esc(note.d)}</span></div>` : ""}
           <div class="tiles">
             ${tile("パワー", base.power, "%")}
             ${tile("スピード", base.speed, "%")}
             ${tile(fl, base.freq || null, "")}
           </div>
           <div class="basis">${badge(base)}<span>もとにした前例：${esc(base.name)}${base.th != null ? ` ${base.th}mm` : ""}</span></div>
-          ${far ? `<div class="basis">厚さが違う前例です。テスト加工で切れ具合を見て、スピードで調整してください。</div>` : ""}
+          <div class="basis">2023年の発振器交換より前の記録は強めに出ることがあります。必ずテスト加工してから本番に入ってください。</div>
         </div>
       </div>`;
+    } else {
+      rec = `<div class="rec"><div class="box start blocked">
+          <h2><span>おすすめの開始値（${state.mode}）</span><span></span></h2>
+          <p class="stopmsg">おすすめにできる前例がありません</p>
+          <div class="basis">結果が「◎○△」で、パワーとスピードが正しく記録された前例がありません。下の一覧を参考に、スタッフに相談してください。</div>
+        </div></div>`;
     }
     const LIMIT = 15;
     const shown = state.showAll ? list : list.slice(0, LIMIT);
     const rows = shown.map((r) => {
-      const flag = /禁止|加工できない|入力ミス/.test(r.memo);
+      const notes = [];
+      if (r.ng) notes.push(`<span class="flag bad">加工不可：${esc(r.ng.t)}</span>`);
+      if (r.issues.length) notes.push(`<span class="flag">数値に問題（おすすめ値に使いません）：${esc(r.issues.join("、"))}</span>`);
+      if (r.type === "不明") notes.push(`<span class="flag">加工種類が${r.typeRaw ? `「${esc(r.typeRaw)}」` : "未記入"}（おすすめ値に使いません）</span>`);
+      if (r.memo) notes.push(/禁止|加工できない|入力ミス/.test(r.memo) ? `<span class="flag">${esc(r.memo)}</span>` : esc(r.memo));
       const near = t != null && r.th != null && dist(r) <= 0.5;
-      return `<tr class="${r.result === "✕" ? "x" : ""}${near ? " near" : ""}">
+      return `<tr class="${r.result === "✕" || r.ng ? "x" : ""}${near ? " near" : ""}">
         <td class="res">${badge(r)}</td>
         <td class="name">${esc(r.name)}<small>${esc([r.cat].filter(Boolean).join(" ・ "))}</small></td>
         <td class="n th" data-l="厚さ">${r.th != null ? `<span class="mk">${r.th}mm</span>` : "—"}</td>
         <td class="n" data-l="パワー">${r.power != null ? r.power + "%" : "—"}</td>
         <td class="n" data-l="スピード">${r.speed != null ? r.speed + "%" : "—"}</td>
         <td class="n" data-l="${fl}">${esc(r.freq || "—")}</td>
-        <td class="memo">${r.memo ? (flag ? `<span class="flag">${esc(r.memo)}</span>` : esc(r.memo)) : ""}</td>
+        <td class="memo">${notes.join("<br>")}</td>
         <td class="lk">${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Notionで開く</a>` : ""}</td>
       </tr>`;
     }).join("");
     $("rec").innerHTML = rec;
-    const recKey = base ? [state.mode, base.name, base.th, base.power, base.speed, base.freq].join("|") : "";
+    const recKey = base ? [state.mode, base.name, base.th, base.power, base.speed, base.freq].join("|") : stops.length ? "stop" : "none";
     if (recKey !== lastRecKey) { const b = $("rec").querySelector(".box"); if (b) b.classList.add("enter"); lastRecKey = recKey; }
     $("toListText").textContent = `${state.mode}の前例 ${list.length}件を見る`;
     $("toList").hidden = false;
@@ -591,10 +720,16 @@ details.rules { border-radius: 0; }
     }
   }
 
-  // ---- events ----
+  // ---- 操作 ----
+  // 素材欄に厚さが含まれていたら、厚さ欄にも入れる
+  function syncThickFromQuery() {
+    if (!state.loaded) return;
+    const sq = splitQuery($("q").value);
+    if (sq.th != null && num($("t").value) !== sq.th) $("t").value = sq.th;
+  }
   $("chips").insertAdjacentHTML("beforeend", CHIPS.map((n) => `<button type="button" data-q="${esc(n)}">${esc(n)}</button>`).join(""));
   $("form").addEventListener("submit", (e) => e.preventDefault());
-  $("q").addEventListener("input", () => { state.showAll = false; render(); });
+  $("q").addEventListener("input", () => { state.showAll = false; syncThickFromQuery(); render(); });
   $("t").addEventListener("input", render);
   $("toList").addEventListener("click", () => $("listArea").scrollIntoView({ behavior: "smooth", block: "start" }));
   document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
